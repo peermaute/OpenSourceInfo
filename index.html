@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="headerDiv">
@@ -40,15 +42,225 @@
             <p>Wenn Du Dir nur 10 minuten Zeit nimmst, kannst Du diese Fragen im Anschluss sicherlich beantworten.</p>
         </div>
     </header>
-    <section class="fossVsOpenSource">
-        <div>
-            <h1>Was bietet eigentlich Software?</h1>
+    <section>
+        <h1>Was bietet eigentlich Software?</h1>
+        <div class="flex-container">
+            <div class="flex-container-vertical">
+                <h1>OpenSource/FOSS</h1>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Frei Zugänglich</h2>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Für Jeden Zugänglich, jeder kann es einsehen, verifizieren, erweitern und verbreiten
+                                Unabhängig von herkunft, Finanzieller situation... </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Nachhaltig & Vielfalt</h2>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Schafft offenes Wissen, eine Basis auf der zukünftig aufgebaut werden kann (Das Rad Nicht
+                                neu Erfinden)-> Fördert Vielfalt </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Sicherheit & Transparenz</h2>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Schafft Tranzparenz Kann von Unabhängigen Stellen verifiziert werden.. -> keine Backdoors
+                                usw </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Community Driven</h2>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Jeder kann Beitragen. Offenes Forum für die Entwicklung. Features, Issues, Needs.
+                                Entwicklung des Projekts mitgestalten! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-container-vertical">
+                <h1>Proprietäre Software</h1>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Wettbewerb</h2>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Platzhalter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Qualität durch Finanzielle Ressourcen</h2>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Platzhalter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Regulierte Nutzung</h2>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Mehr Kontrolle über die Daten und die Verwendung des Programms. -> Code kann auch für
+                                negative sachen mißbraucht werden </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Gerechte Entlohung</h2>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Entwickler werden für ihre Arbeit bezahlt </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
+        </div>
+    </section>
+    <section>
+        <h1>
+            Falls Du Dich fragst, wie man FOSS eigentlich genau definiert
+        </h1>
+        <p>
+            Hier einmal ein kleiner
+            <a href="https://www.informatik-verstehen.de/lexikon/foss/">Link</a>
+            für dich
+        </p>
+    </section>
+    <section>
+        <h1>Was wird eigentlich wo eingesetzt?</h1>
+        <details>
+            <summary>Privat</summary>
+            <p>
+                Beispiele für Private Software:
+                Windows, MSOffice, Apple/iOS, GoogleCloud, Spotify (Beispiel finden für Werbung)Adobe, ZOOM, Netflix
+            </p>
+            <p>
+                -> Wer bezahlt das eigentlich.. -> Wir mit unseren Daten Größtenteils.. (Selbst wenn wir Zahlen) Wir
+                haben keine Kontrolle über den Preis und die Konditionen -> Wer Weiß eigentlich was in den AGBs
+                drinsteht
+            </p>
+        </details>
+        <details>
+            <summary>Öffentliche Verwaltung</summary>
+            <p>Windows & WindowsServer, MSOffice, GoogleCloud, Adobe,MSTeams, ZOOM, SAP, Jira</p>
+            <p>Wir Zahlen das.. Öffentliche Gelder -> Ohne Transparenz -> Beispiele für Geschwärtzte verträge ->
+                Lizenzsummen Luca app...</p>
+        </details>
+        <details>
+            <summary>Schnittstellen</summary>
+            <p>Diese Programme erzeugen & benutzen Proprietäre Dateiformate:.pptx .docx usw... <br>Keine Barrierefreie &
+                Maschinenlesbarer Zugang zu Bereitgestellten InformationenAPI -> Beispiel Arbeitsagentur</p>
+        </details>
+    </section>
 
+    <section>
+        <h1>Aber was ist mit OpenSource?</h1>
+        <p>Findet das keine Verbreitung?</p>
+        <details>
+            <summary>Privat</summary>
+            <p>
+                Beispiele für Private Software:
+            </p>
+            <p>
+                Firefox, VLC, Gimp, OpenOffice, Wordpress, Notepad++, LibreOffice, Linux, Signal
+            </p>
+        </details>
+        <details>
+            <summary>Öffentliche Verwaltung</summary>
+            <p>Beispiele für öffentliche Verwaltung:</p>
+            <p>Limux: Warum wurde dafür entschieden(Polizei Italien?)</p>
+        </details>
+        <details>
+            <summary>Schnittstellen</summary>
+            <p>Beispiele für Schnittstellen:</p>
+            <p>HVV API, Signal API, PNG, CSV, XML, SVG, HTML, JSON </p>
+        </details>
+    </section>
+    <section>
+        <details>
+            <summary>Infrastruktur</summary>
+            <p>Beispiele für Schnittstellen:</p>
+            <p>Apache, PostGres, MySQL, NextCloud, OwnCloud, Kubernetes, Wordpress, OpenSSL, letsencrypt
+            <p>
+        </details>
+        <details>
+            <summary>Politik</summary>
+            <p>Beschluss EU zu OpenSource...</p>
+            <p>Quotes
+            <p>
+        </details>
+    </section>
+    <section>
+        <h1>Warum wird nicht noch mehr Open Source & Offene Schnittstellen genutzt?</h1>
+        <p>Was ist der Grund für all die Eingestellte Software?</p>
+        <p>Rückmigrationen.</p>
+        <h1 class="kurz-einmal-fuer-uebersicht">Marktmacht & Wirtschaftliche Einflüsse in die Politik</h1>
+        <h1 class="kurz-einmal-fuer-uebersicht">Bestehendes Lock-In<br>Umstieg Teurer oder nicht möglich wegen LockIn
+        </h1>
+        <h1 class="kurz-einmal-fuer-uebersicht">Bequemlichkeit -> Menschen kennen MS Office & Windows</h1>
+        <h1 class="kurz-einmal-fuer-uebersicht">Fehlendes Verständnis für Problematik</h1>
+        <h1 class="kurz-einmal-fuer-uebersicht">Fehlende Politische Anreize</h1>
+        <h1 class="kurz-einmal-fuer-uebersicht">Noch weitere/Undefinierte Gründe ?</h1>
+    </section>
+    <section>
+        <h1>Wir müssen uns aktiv dafür einsetzen!</h1>
+        <h1 class="kurz-einmal-fuer-uebersicht">Initiatiativen</h1>
+        <div class="kurz-einmal-fuer-uebersicht">
+            <h1>OpenSource und Human Rights</h1>
+            <p>OpenSource hat so viele für die Freiheit der Menschen wichtigen Projekte ins Leben gerufen..</p>
+        </div>
+        <div class="kurz-einmal-fuer-uebersicht">
+            <h1>OpenSource und Nachhaltigkeit</h1>
+            <p>OpenSource als weg in eine nachhaltige Digitale Zukunft ?</p>
+        </div>
+        <div class="kurz-einmal-fuer-uebersicht">
+            <h1>OpenSource für Digitale Souveränität</h1>
+            <p>Unabhängigkeit und Selbstbestimmtheit</p>
+        </div>
+        <div class="kurz-einmal-fuer-uebersicht">
+            <h1>Wirtschaftliche Bedeutung von OpenSource</h1>
+        </div>
+    </section>
+    <section>
+        <h1>Warum nutzt Du keine OpenSource/FOSS Lösungen?</h1>
+        <div class="flex-container-vertical">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="textField">Text:</label>
+                <input type="text" id="textField" name="textField">
+            </div>
+            <input type="submit" value="Submit">
+        </div>
     </section>
     <footer>
         <p>No rights reserved - Linus und Peer</p>
     </footer>
 </body>
+
 </html>
