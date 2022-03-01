@@ -1,0 +1,45 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header>div>nav{
+    text-align: center;
+}
+nav>ul{
+    display: inline-block;
+}
+nav>ul>li{
+    display: inline;
+    color: gray;
+}
+nav>ul>li :hover{
+    color: black;
+    font-size: large;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: gray;
+}
+header>div>h1{
+    text-align: center;
+}
+header>div>p{
+    text-align: center;
+}
+.fossVsOpenSource{
+    text-align: center;
+}
+.fossVsOpenSource>div{
+    display: inline-block;
+    border-style: solid;
+    text-align: center;
+}
+.fossVsOpenSource>div>h1{
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}   
+footer>p{
+    text-align: center;
+    color: gray;
+}
+
