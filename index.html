@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65d0c821fb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,40 +20,44 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="">FOSS vs OpenSource</a>
+                        <a href="#FossVsProp">FOSS vs Proprietär</a>
                     </li>
                     <li>|</li>
                     <li>
-                        <a href="">Einsatz</a>
+                        <a href="#einsatz">Einsatz</a>
                     </li>
                     <li>|</li>
                     <li>
-                        <a href="">Gründe gegen Open Source</a>
+                        <a href="#gruendeGegenFoss">Gründe gegen Open Source</a>
                     </li>
                     <li>|</li>
                     <li>
-                        <a href="">Aktiv werden!</a>
+                        <a href="#aktivWerden">Aktiv werden!</a>
                     </li>
                     <li>|</li>
                     <li>
-                        <a href="">Warum nicht mehr Open Source</a>
+                        <a href="#warumKeinFoss">Warum nicht mehr Open Source</a>
                     </li>
                 </ul>
             </nav>
-            <h1>Warum entscheidest Du dich jeden Tag gegen Open Source?</h1>
-            <p>Wenn Du Dir nur 10 minuten Zeit nimmst, kannst Du diese Fragen im Anschluss sicherlich beantworten.</p>
-            <br>
-            <br>
-            <h3>Ein neues Program, eine andere App- Mal eben eine Datei abspeichern.
-                <br> <p> In jeder dieser Momente triffst du eine Entscheidung. Häufig gegen OpenSource.</p>
-                <p>Doch was unterscheidet eigentlich OpenSource, und welche Folgen hat diese Entscheidung?</p>
-            </h3>
+            <hr>
+            <div class="headline">
+                <h1>Warum entscheidest Du dich jeden Tag gegen Open Source?</h1>
+                <p>Wenn Du Dir nur 10 minuten Zeit nimmst, kannst Du diese Fragen im Anschluss sicherlich beantworten.</p>
+            </div>
         </div>
-        <br>
-        <br>
-        <br>
     </header>
+    <div class="openSourceDiv">
+        <i id="openSourceIcon" class="fa-brands fa-osi"></i>
+    </div>
     <section>
+        <h3>Ein neues Program, eine andere App- Mal eben eine Datei abspeichern.
+            <br> <p> In jeder dieser Momente triffst du eine Entscheidung. Häufig gegen OpenSource.</p>
+            <p>Doch was unterscheidet eigentlich OpenSource, und welche Folgen hat diese Entscheidung?</p>
+        </h3>
+    </section>
+    <hr>
+    <section id="FossVsProp">
         <h1>Was bietet eigentlich Software?</h1>
         <div class="flex-container">
             <div class="flex-container-vertical">
@@ -164,7 +169,7 @@
         </div>
         </div>
     </section>
-
+    <hr>
     <section>
         <div class="quote_block">
             <p> "Der meiste Code, der deinen Alltag beeinflusst, ist ein Geheimnis der Unternehmen, die ihn besitzen:
@@ -179,7 +184,7 @@
             </a>
         </p>
     </section>
-
+    <hr>
     <section>
         <h1>
             Falls Du Dich fragst, wie man FOSS eigentlich genau definiert
@@ -201,7 +206,8 @@
         </p>
         <h4>Mehr: <a href="https://www.gnu.org/philosophy/free-sw.de.html">Freie Software. Was ist das?</a></h4>
     </section>
-    <section>
+    <hr>
+    <section id="einsatz">
         <h1>Was wird denn eigentlich nun wo eingesetzt ? </h1>
         <details>
             <summary>Privater Bereich</summary>
@@ -287,7 +293,7 @@
 
         </details>
     </section>
-
+    <hr>
     <section>
         <h1>Aber was ist mit OpenSource?</h1>
         <p>Findet das keine Verbreitung?</p>
@@ -325,7 +331,8 @@
             <p>
         </details>
     </section>
-    <section>
+    <hr>
+    <section id="gruendeGegenFoss">
         <h1>Warum wird nicht noch mehr Open Source & Offene Schnittstellen genutzt?</h1>
         <p>Was ist der Grund für all die Eingestellte Software?</p>
         <p>Rückmigrationen.</p>
@@ -337,7 +344,7 @@
         <h1 class="kurz-einmal-fuer-uebersicht">Fehlende Politische Anreize</h1>
         <h1 class="kurz-einmal-fuer-uebersicht">Noch weitere/Undefinierte Gründe ?</h1>
     </section>
-    <section>
+    <section id="aktivWerden">
         <h1>Wir müssen uns aktiv dafür einsetzen!</h1>
         <h1 class="kurz-einmal-fuer-uebersicht">Initiatiativen</h1>
         <div class="kurz-einmal-fuer-uebersicht">
@@ -356,7 +363,8 @@
             <h1>Wirtschaftliche Bedeutung von OpenSource</h1>
         </div>
     </section>
-    <section>
+    <hr>
+    <section id="warumKeinFoss">
         <h1>Warum nutzt Du keine OpenSource/FOSS Lösungen?</h1>
         <div class="flex-container-vertical">
             <div>
@@ -370,6 +378,7 @@
             <input type="submit" value="Submit">
         </div>
     </section>
+    <hr>
     <footer>
         <p>No rights reserved - Linus und Peer</p>
     </footer>
