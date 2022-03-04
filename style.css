@@ -110,7 +110,12 @@ section>h1{
     font-style: italic;
 }
 
-
+.blocksatz>p{
+    hyphens: auto;
+    text-align: justify;    
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
 section>details>p{
     margin-left: 30px;
@@ -187,9 +192,10 @@ section>details>p{
 
 /* Style the back side */
 .flip-card-back {
-    background-color: #88BFB5;
+    background-color: #592E42;/* #BF665E; */
     color: white;
     transform: rotateY(180deg);
+    font-weight: 400;    
 }
 
 section>details{
