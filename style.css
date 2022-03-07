@@ -88,10 +88,9 @@ section:nth-of-type(1){
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    width: 40%;
+    width: 550px;
     margin-top: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 section>h1{
     font-size: 3em;
@@ -149,7 +148,7 @@ section>details>p{
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 500px;
+    width: 350px;
     height: 200px;
     perspective: 1000px;    
     /* Remove this if you don't want the 3D effect */
@@ -213,6 +212,98 @@ section>details>summary{
     border-radius: 5px;
 }
 
+/* === CSS Accordion https://codepen.io/raubaca/pen/PZzpVe === */ 
+
+
+body {
+    color: #253659;
+    background: #ecf0f1;
+    padding: 0 1em 1em;
+}
+h1 {
+    margin: 0;
+    line-height: 2;
+    text-align: center;
+}
+h2 {
+    margin: 0 0 0.5em;
+    font-weight: normal;
+}
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.row {
+    display: flex;
+}
+.row .col {
+    flex: 1;
+}
+.row .col:last-child {
+    margin-left: 1em;
+}
+/* Accordion styles */
+.tabs {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+.tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+.tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #2c3e50;
+    font-weight: bold;
+    cursor: pointer;
+   /* Icon */
+}
+.tab-label:hover {
+    background: #1a252f;
+}
+.tab-label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+.tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.35s;
+}
+.tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #2c3e50;
+    cursor: pointer;
+}
+.tab-close:hover {
+    background: #1a252f;
+}
+input:checked + .tab-label {
+    background: #1a252f;
+}
+input:checked + .tab-label::after {
+    transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+}
+
+
+
 /*------------------------------------------------*/
  /* Tooltip container */
  .tooltip {
@@ -262,6 +353,15 @@ section>details>summary{
   } 
 
 /*------------------------------------------------*/
+
+.icons{
+    margin: 50px;
+    font-size: 100px;
+    color: #253659;
+}
+.icons:hover{
+    color: black;
+}
 
 footer>p {
     text-align: center;
