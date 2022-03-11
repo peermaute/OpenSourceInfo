@@ -4,13 +4,23 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;   
     color: #253659;
+    padding: 0 !important;
 }
-body>hr{
-    width: 25%;
-    border: none;
-    color: #253659;
-    background-color: #d3d3d3;
-    height: 7px;
+#header-separator{
+    margin: auto ;
+    width: 30% ;
+    border: none ;
+    color: white ;
+    background-color: white ;
+    height: 5px ;
+}
+.section-separator{
+    margin: auto !important;
+    width: 25% !important;
+    border: none !important;
+    color: #253659 !important;
+    background-color: grey !important;
+    height: 7px !important;
 }
 header{
     margin-top: 0;
@@ -380,7 +390,9 @@ input:checked ~ .tab-content {
 .icons:hover{
     color: black;
 }
-
+footer{
+    margin-top: 50px;
+}
 footer>p {
     text-align: center;
     color: gray;

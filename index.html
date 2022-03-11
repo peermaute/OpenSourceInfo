@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Source</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +15,7 @@
     <link rel="shortcut icon" type="image/jpg" href="open-source-logo - Kopie.jpg" />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> -->
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/65d0c821fb.js" crossorigin="anonymous"></script>
@@ -46,7 +47,7 @@
                     </li>
                 </ul>
             </nav>
-            <hr>
+            <hr id="header-separator">
             <div class="headline">
                 <h1>Warum entscheidest Du dich jeden Tag gegen Open Source?</h1>
                 <p>Wenn Du Dir nur 10 minuten Zeit nimmst, kannst Du diese Fragen im Anschluss sicherlich beantworten.
@@ -64,7 +65,7 @@
             <p>Doch was unterscheidet eigentlich OpenSource, und welche Folgen hat diese Entscheidung?</p>
         </h3>
     </section>
-    <hr>
+    <hr class="section-separator">
     <section id="FossVsProp">
         <h1>Was bietet eigentlich Software?</h1>
         <div class="flex-container">
@@ -177,7 +178,7 @@
         </div>
         </div>
     </section>
-    <hr>
+    <hr class="section-separator">
     <section>
         <div class="quote_block">
             <p> "Der meiste Code, der deinen Alltag beeinflusst, ist ein Geheimnis der Unternehmen, die ihn besitzen:
@@ -192,7 +193,7 @@
             </a>
         </p>
     </section>
-    <hr>
+    <hr class="section-separator">
     <section>
         <h1>
             Falls Du Dich fragst, wie man FOSS eigentlich genau definiert
@@ -214,126 +215,131 @@
         </p>
         <h4>Mehr: <a href="https://www.gnu.org/philosophy/free-sw.de.html">Freie Software. Was ist das?</a></h4>
     </section>
-    <hr>
+    <hr class="section-separator">
     <section id="einsatz">
         <h1>Was wird denn eigentlich nun wo eingesetzt ? </h1>
 
 
         <div class="slideshow">
 
-            <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel " data-interval="false">
+            <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel "
+                data-interval="false">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <h1>1</h1>
-                  </div>
-                  <div class="carousel-item">
-                    <h1>2</h1>
-                  </div>
-                  <div class="carousel-item">
-                    <h1>3</h1>
-                  </div>
+                    <div class="carousel-item active">
+                        <h1>Privater Bereich</h1>
+                        <p>
+                            Beispiele für Private Software:
+                            Windows, MSOffice, Apple/iOS, GoogleCloud, Spotify (Beispiel finden für Werbung)Adobe, ZOOM,
+                            Netflix
+                        </p>
+                        <p>
+                            Viele der im privaten Bereich eingesetzten Software sind Produkte großer Unternehmen. <br>
+                            In allen fällen Zahlen wir als Endanwender. Häufig mit unseren Daten, aber teilweise auch
+                            direkt als
+                            teil eines monatlichen Abos.
+                            <br>
+                            Doch wer garantiert uns eigentlich dass wir all die fein säuberlich erstellten Playlists in
+                            Spotify, die
+                            lang erarbeiteten Photoshop projekte oder getippten GoogleDocs Dokumente morgen noch zu den
+                            Konditionen
+                            erreichen können ?
+                        </p>
+                        <h4>Auszug aus den Google Richtlinien:</h4>
+                        <blockquote
+                            cite="https://support.google.com/docs/answer/148505?visit_id=637819466039413237-333646249&hl=de&rd=1#zippy=%2Cverwenden-und-einreichen-von-inhalten">
+                            <p>"Sobald wir über einen potenziellen Verstoß [gegen die Richtlinien] informiert werden,
+                                prüfen wir den
+                                Inhalt und ergreifen gegebenenfalls entsprechende Maßnahmen. Dies kann beispielsweise
+                                die
+                                <b>Beschränkung
+                                    des Zugriffs </b>auf den Inhalt, die <b>Entfernung von Inhalten </b> sowie die
+                                Beschränkung oder
+                                Sperrung des
+                                Zugriffs auf Google-Produkte für den betreffenden Nutzer beinhalten."
+                            <p>
+                                Siehe:<a
+                                    href="https://support.google.com/docs/answer/148505?visit_id=637819466039413237-333646249&hl=de&rd=1#zippy=%2Cverwenden-und-einreichen-von-inhalten"><br>Google
+                                    Richtlinien</a>
+
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Öffentliche Verwaltung</h1>
+                        <p>Windows & WindowsServer, MSOffice, GoogleCloud, Adobe,MSTeams, ZOOM, SAP, Jira</p>
+
+                        <p> In der Öffentlichen Verwaltung sind vorallem Sichere und Stabile und Datenschutzkonforme
+                            Software
+                            wichtig.
+                            <br>
+                            Eine große menge an sensiblen nutzerdaten müssen verarbeitet werden. <br>
+                            Auch hier finden wir größtenteils Proprietäre lösungen.
+                        </p>
+                        <blockquote
+                            cite="https://netzpolitik.org/2020/datenschutzkonferenz-deutsche-verwaltung-nutzt-microsoft-produkte-nicht-rechtskonform/">
+                            "Bereits im vergangenen Jahr stellte eine Marktanalyse im Auftrag des
+                            Bundesinnenministeriums fest, dass
+                            <b>96 Prozent</b> aller Behörden Produkte aus Microsoft-Office-Paket verwenden."
+                        </blockquote>
+
+                        <p> Die Lizensen hierfür werden mit öffentlichen Geldern bezahlt, öffentliche Ausschreibungen
+                            sollen ein
+                            gerechtes vergabeverfahren gewährleisten. <br>
+                            Doch wie kommt es dann dass wir auf der Suche nur eine große Menge an geschwärtzten
+                            Verträgen zu Gesicht
+                            bekommen ?
+                        </p>
+
+                        <p>Siehe <a
+                                href="https://fragdenstaat.de/dokumente/142633-kooperationsvertrag-luca-app-mit-schleswig-holstein/">Kooperationsvertrag
+                                Luca-App mit Schleswig-Holstein</a>
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Schnittstellen</h1>
+                        <p>Ein Großteil dieser Programme erzeugen und nutzen Proprietäre Dateiformate:.pptx .docx usw...
+                            <br>
+                            Einmal gespeicherte Daten lassen sich auch nur noch von diesen Programmen verwenden, da die
+                            Spezifikation der Protokolle und Formate nicht offengelegt wurde.
+                            Eine Herstellerübergreifende Verwendung wird somit ausgeschlossen.
+                            <br>
+                        </p>
+                        <p>Ein Maschienenlesbarer zugang über eine sogenanten öffentliche
+                            <span class="tooltip"> API<span class="tooltiptext"> Die API (Application Programming
+                                    Interface) – auch
+                                    Programmierschnittstelle genannt -
+                                    ermöglicht es Anwendungen
+                                    miteinander zu kommunizieren</span></span>
+                            wird in manchen fällen bereitgestellt aber ist häufig auch nur eingeschränkt nutzbar.
+                        </p>
+                        <p>Die Hersteller behalten die Kontrolle über die Verwendung und können jederzeit die Nutzung
+                            blockieren.
+                            Diese schnittstellen sind nicht nur für Barrierefreie Zugänge wichtig. Auch für die
+                            Integration in
+                            andere
+                            Dienste ist sie notwendig.
+                        </p>
+                        <p> <br>Ein Beispiel für den andauernden Kampf um die Offenlegung einer API der Bundes
+                            Arbeitsagentur <br><a
+                                href="https://netzpolitik.org/2021/open-data-arbeitsagentur-kaempft-gegen-offene-schnittstelle/">Arbeitsagentur
+                                kämpft gegen offene Schnittstelle</a>
+                            <br>
+                        </p>
+                    </div>
                 </div>
-                <button class="carousel-control-prev slideshow-button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev slideshow-button" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+            </div>
         </div>
-
-
-
-
-        <details>
-            <summary>Privater Bereich</summary>
-            <p>
-                Beispiele für Private Software:
-                Windows, MSOffice, Apple/iOS, GoogleCloud, Spotify (Beispiel finden für Werbung)Adobe, ZOOM, Netflix
-            </p>
-            <p>
-                Viele der im privaten Bereich eingesetzten Software sind Produkte großer Unternehmen. <br>
-                In allen fällen Zahlen wir als Endanwender. Häufig mit unseren Daten, aber teilweise auch direkt als
-                teil eines monatlichen Abos.
-                <br>
-                Doch wer garantiert uns eigentlich dass wir all die fein säuberlich erstellten Playlists in Spotify, die
-                lang erarbeiteten Photoshop projekte oder getippten GoogleDocs Dokumente morgen noch zu den Konditionen
-                erreichen können ?
-            </p>
-            <h4>Auszug aus den Google Richtlinien:</h4>
-            <blockquote
-                cite="https://support.google.com/docs/answer/148505?visit_id=637819466039413237-333646249&hl=de&rd=1#zippy=%2Cverwenden-und-einreichen-von-inhalten">
-                <p>"Sobald wir über einen potenziellen Verstoß [gegen die Richtlinien] informiert werden, prüfen wir den
-                    Inhalt und ergreifen gegebenenfalls entsprechende Maßnahmen. Dies kann beispielsweise die
-                    <b>Beschränkung
-                        des Zugriffs </b>auf den Inhalt, die <b>Entfernung von Inhalten </b> sowie die Beschränkung oder
-                    Sperrung des
-                    Zugriffs auf Google-Produkte für den betreffenden Nutzer beinhalten."
-                <p>
-                    Siehe:<a
-                        href="https://support.google.com/docs/answer/148505?visit_id=637819466039413237-333646249&hl=de&rd=1#zippy=%2Cverwenden-und-einreichen-von-inhalten"><br>Google
-                        Richtlinien</a>
-
-            </blockquote>
-
-        </details>
-        <details>
-            <summary>Öffentliche Verwaltung</summary>
-            <p>Windows & WindowsServer, MSOffice, GoogleCloud, Adobe,MSTeams, ZOOM, SAP, Jira</p>
-
-            <p> In der Öffentlichen Verwaltung sind vorallem Sichere und Stabile und Datenschutzkonforme Software
-                wichtig.
-                <br>
-                Eine große menge an sensiblen nutzerdaten müssen verarbeitet werden. <br>
-                Auch hier finden wir größtenteils Proprietäre lösungen.
-            </p>
-            <blockquote
-                cite="https://netzpolitik.org/2020/datenschutzkonferenz-deutsche-verwaltung-nutzt-microsoft-produkte-nicht-rechtskonform/">
-                "Bereits im vergangenen Jahr stellte eine Marktanalyse im Auftrag des Bundesinnenministeriums fest, dass
-                <b>96 Prozent</b> aller Behörden Produkte aus Microsoft-Office-Paket verwenden."
-            </blockquote>
-
-            <p> Die Lizensen hierfür werden mit öffentlichen Geldern bezahlt, öffentliche Ausschreibungen sollen ein
-                gerechtes vergabeverfahren gewährleisten. <br>
-                Doch wie kommt es dann dass wir auf der Suche nur eine große Menge an geschwärtzten Verträgen zu Gesicht
-                bekommen ?
-            </p>
-
-            <p>Siehe <a
-                    href="https://fragdenstaat.de/dokumente/142633-kooperationsvertrag-luca-app-mit-schleswig-holstein/">Kooperationsvertrag
-                    Luca-App mit Schleswig-Holstein</a>
-            </p>
-        </details>
-        <details>
-            <summary>Schnittstellen</summary>
-            <p>Ein Großteil dieser Programme erzeugen und nutzen Proprietäre Dateiformate:.pptx .docx usw... <br>
-                Einmal gespeicherte Daten lassen sich auch nur noch von diesen Programmen verwenden, da die
-                Spezifikation der Protokolle und Formate nicht offengelegt wurde.
-                Eine Herstellerübergreifende Verwendung wird somit ausgeschlossen.
-                <br>
-            </p>
-            <p>Ein Maschienenlesbarer zugang über eine sogenanten öffentliche
-                <span class="tooltip"> API<span class="tooltiptext"> Die API (Application Programming Interface) – auch
-                        Programmierschnittstelle genannt -
-                        ermöglicht es Anwendungen
-                        miteinander zu kommunizieren</span></span>
-                wird in manchen fällen bereitgestellt aber ist häufig auch nur eingeschränkt nutzbar.
-            </p>
-            <p>Die Hersteller behalten die Kontrolle über die Verwendung und können jederzeit die Nutzung blockieren.
-                Diese schnittstellen sind nicht nur für Barrierefreie Zugänge wichtig. Auch für die Integration in
-                andere
-                Dienste ist sie notwendig.
-            </p>
-            <p> <br>Ein Beispiel für den andauernden Kampf um die Offenlegung einer API der Bundes Arbeitsagentur <br><a
-                    href="https://netzpolitik.org/2021/open-data-arbeitsagentur-kaempft-gegen-offene-schnittstelle/">Arbeitsagentur
-                    kämpft gegen offene Schnittstelle</a>
-                <br>
-            </p>
-        </details>
     </section>
-    <hr>
+    <hr class="section-separator">
     <section>
         <h1>Aber was ist mit FOSS/OpenSource?</h1>
         <p>Findet das keine Verbreitung?</p>
@@ -466,7 +472,7 @@
                 <a href="https://www.oeffentliche-it.de/documents/10181/14412/Digitale+Souver%C3%A4nit%C3%A4t"></a>
         </details>
     </section>
-    <hr>
+    <hr class="section-separator">
     <section id="gruendeGegenFoss">
         <h1>Warum wird nicht noch mehr Open Source & Offene Schnittstellen genutzt?</h1>
         <div class="row">
@@ -524,7 +530,7 @@
             </div>
         </div>
     </section>
-    <hr>
+    <hr class="section-separator">
     <section id="aktivWerden">
         <h1>Wir müssen uns aktiv dafür einsetzen!</h1>
         <h1 class="kurz-einmal-fuer-uebersicht">Initiatiativen</h1>
@@ -544,7 +550,7 @@
             <h1>Wirtschaftliche Bedeutung von OpenSource</h1>
         </div>
     </section>
-    <hr>
+    <hr class="section-separator">
     <section id="warumKeinFoss">
         <h1>Warum nutzt Du keine OpenSource/FOSS Lösungen?</h1>
         <h2>Schreib uns eine Mail</h2>
@@ -552,7 +558,7 @@
             <i class="fa-solid fa-envelope icons"></i>
         </a>
     </section>
-    <hr>
+    <hr class="section-separator">
     <footer>
         <p>No rights reserved - Linus und Peer</p>
     </footer>
