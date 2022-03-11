@@ -197,6 +197,24 @@ section>details>p{
     font-weight: 400;    
 }
 
+
+
+/* === Slide show start  === */
+
+
+
+.slideshow-button{
+    color: black !important;
+}
+
+
+
+  /* === Slide show end === */
+
+
+
+
+  
 section>details{
     margin: 20px;
     border-radius: 5px;
