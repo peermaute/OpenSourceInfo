@@ -102,11 +102,18 @@ section:nth-of-type(1){
     margin-top: 0;
     padding: 30px;
 }
+
 section>h1{
     font-size: 3em;
     font-weight: 600;
     margin-bottom: 80px;
 }
+
+h4{
+    font-weight: 600;
+    font-size: 100%;
+}
+
 .flex-container-vertical>h1{
     font-weight: 600;
 }
@@ -359,7 +366,7 @@ input:checked ~ .tab-content {
   
     /* Fade in tooltip */
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.5s;
   }
   
   /* Tooltip arrow */
