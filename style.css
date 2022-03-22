@@ -293,9 +293,12 @@ input {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
     background: #2c3e50;
     font-weight: bold;
     cursor: pointer;
+    
    /* Icon */
 }
 .tab-label:hover {
@@ -333,7 +336,7 @@ input:checked + .tab-label::after {
     transform: rotate(90deg);
 }
 input:checked ~ .tab-content {
-    max-height: 100vh;
+    max-height: 200vh;
     padding: 1em;
 }
 
