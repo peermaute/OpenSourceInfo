@@ -112,6 +112,7 @@ section>h1{
 h4{
     font-weight: 600;
     font-size: 100%;
+    margin-bottom: 20px;
 }
 
 .flex-container-vertical>h1{
@@ -313,7 +314,7 @@ input {
 }
 .tab-content {
     max-height: 0;
-    padding: 0 1em;
+    padding: 0 1em;   
     color: #2c3e50;
     background: white;
     transition: all 0.35s;
@@ -338,6 +339,7 @@ input:checked + .tab-label::after {
 input:checked ~ .tab-content {
     max-height: 200vh;
     padding: 1em;
+    padding-top: 3%;
 }
 
 
@@ -402,6 +404,7 @@ input:checked ~ .tab-content {
 }
 footer{
     margin-top: 50px;
+    text-align: center;
 }
 footer>p {
     text-align: center;
