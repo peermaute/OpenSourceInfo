@@ -9,6 +9,7 @@
 - [ ] Collapsible
 - [ ] Terminologie -> FOSS/Open Source 
 - [ ] Icons
+- [ ] Navbar Layout korrigieren (Mehr Space)
 
 
 ## Inhaltliches:
@@ -17,7 +18,7 @@
 - [ ] Call To Action 
 - [ ] Weitere Informationen, Artikel usw.
 - [ ] Quick Protokoll Link
-
+- [ ] Add Readme to repo
 ----
 
 ## Sonstiges:
