@@ -230,7 +230,9 @@ section>details>p{
   /* === Slide show end === */
 
 
-
+.icon{
+    height: 60px;
+}
 
   
 section>details{
