@@ -1,7 +1,7 @@
 # TODOS
 
 ## Layout
-- [ ] Rechtschreibung 
+- [x] Rechtschreibung 
 - [ ] Textsetzung	-> Blocksatz
 - [ ] Tooltips funktionieren  
 - [ ] Link Layout - Farbe verändern 
