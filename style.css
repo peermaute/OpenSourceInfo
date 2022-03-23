@@ -124,7 +124,13 @@ h4{
     margin-left: 15%;
     margin-right: 15%;
     line-height: 180%;
-    font-style: italic;
+    font-style: italic;    
+}
+
+.quote_block>h1{
+    font-size: 180%;
+    font-weight: 200;
+    line-height: 180%;
 }
 
 .blocksatz>p{
@@ -414,4 +420,13 @@ footer>p {
 }
 
 
-
+/*-------------------------------------------------*/
+.btn-outline-success:hover{
+    background-color: #BF665E;
+    border-color: #BF665E;
+}
+.btn-outline-success{
+    border-color: #2c3e50;
+    color: #2c3e50;
+    width: 200px;
+}
