@@ -4,12 +4,12 @@
 - [x] Rechtschreibung 
 - [ ] Textsetzung	-> Blocksatz
 - [ ] Tooltips funktionieren  
-- [ ] Link Layout - Farbe verändern 
+- [x] Link Layout - Farbe verändern 
 - [ ] SlideShow
-- [ ] Collapsible
+- [x] Collapsible
 - [ ] Terminologie -> FOSS/Open Source 
 - [ ] Icons
-- [ ] Navbar Layout korrigieren (Mehr Space)
+- [x] Navbar Layout korrigieren (Mehr Space)
 
 
 ## Inhaltliches:
