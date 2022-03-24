@@ -10,18 +10,19 @@
 - [ ] Terminologie -> FOSS/Open Source 
 - [ ] Icons
 - [x] Navbar Layout korrigieren (Mehr Space)
-
+- [ ] Navbar Aktualisieren 
 
 ## Inhaltliches:
 
-- [ ] Weitere Gründe 
-- [ ] Call To Action 
-- [ ] Weitere Informationen, Artikel usw.
+- [x] Weitere Gründe 
+- [x] Call To Action 
+- [x] Weitere Informationen, Artikel usw.
 - [ ] Quick Protokoll Link
 - [ ] Add Readme to repo
 ----
 
+
 ## Sonstiges:
-- Wissenschaftlichkeit:
-	- [ ] Belege usw.
-	- [ ] Quellen heraussuchen - Können wir noch Nachhreichen  
+
+- [ ] Repo Aufräumen 
+

@@ -440,3 +440,43 @@ footer>p {
     color: #2c3e50;
     width: 200px;
 }
+
+
+.btn-links:hover{
+    background-color:#253659;
+    border-color: #253659;  
+}
+
+.btn-links{    
+    border-color: #253659;    
+    color: #253659;
+    width: 400px;
+}
+/*---------------------------------------------*/
+
+
+.link-row{    
+    max-width: 75%;
+    margin: auto;    
+}
+
+.link-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.link-row .col-link:last-child{
+    margin-left: 0;
+}
+
+
+.row-spacer{
+    padding-top: 30px;
+}
+
+.btn-call-to-action{
+    margin-top: 40px;
+    
+    font-size: 140%;
+    font-weight: 600;
+}
