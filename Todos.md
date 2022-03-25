@@ -2,27 +2,27 @@
 
 ## Layout
 - [x] Rechtschreibung 
-- [ ] Textsetzung	-> Blocksatz
-- [ ] Tooltips funktionieren  
+- [x] Textsetzung	-> Blocksatz
+- [x] Tooltips funktionieren  
 - [x] Link Layout - Farbe verändern 
 - [ ] SlideShow
 - [x] Collapsible
 - [ ] Terminologie -> FOSS/Open Source 
 - [ ] Icons
 - [x] Navbar Layout korrigieren (Mehr Space)
-- [ ] Navbar Aktualisieren 
+- [x] Navbar Aktualisieren 
 
 ## Inhaltliches:
 
 - [x] Weitere Gründe 
 - [x] Call To Action 
 - [x] Weitere Informationen, Artikel usw.
-- [ ] Quick Protokoll Link
-- [ ] Add Readme to repo
+- [x] Quick Protokoll Link
+- [x] Add Readme to repo
 ----
 
 
 ## Sonstiges:
 
-- [ ] Repo Aufräumen 
+- [x] Repo Aufräumen 
 
