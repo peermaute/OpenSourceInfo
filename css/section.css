@@ -1,0 +1,11 @@
+section {
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+.section-grey {
+    background: #f9fbfc;
+    padding-bottom: 4em;
+    padding-top: 2.5em;
+}
