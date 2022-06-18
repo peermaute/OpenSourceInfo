@@ -1,36 +1,56 @@
 .wrapper {
-  max-width: 80%;
-  width: 100%;
-  margin: 10vh auto;
+  max-width: 35em;
+  padding: 2em 0;
+  margin: 0 auto;
 }
 
-input {
-  display: none;
+.wrap {
+  display: block;
 }
 
-.accordion-label {
-  display: flex;
-  width: 100%;
-  overflow-wrap: break-word;
-  /*height: 100px;*/
+#reasons input {
+  position: absolute;
+  opacity: 0;
+  height: 2.5em;
+  font-size: 1.2em;
   cursor: pointer;
-  border: 3px solid #1A3967;
+  z-index: 2;
+  user-select: none;
+}
+
+.accordion-box {
+  position: relative;
+  display: flex;
+  align-items: center;
   background-color: #1A3967;
   color: #FFFFFF;
   user-select: none;
-  box-shadow: 0px 0px 10px 0px grey;
+  box-shadow: 0 .5em 1em rgba(0, 0, 0, .16);
+  line-height: 2.9em;
+  font-size: 1.2em;
+  z-index: 1;
 }
 
-.accordion-label div:first-child {
+.accordion-label {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+  height: 3.45em;
   width: 100%;
-  line-height: 45px;
-  margin-left: 10px;
-  font-size: 1.2em;
+  max-width: 35em;
+}
+
+.accordion-headline {
+  display: flex;
+  cursor: pointer;
+  padding-left: .8em;
+  width: 100%;
 }
 
 .cross {
-  margin-right: 15px;
-  margin-top: 3px;
+  padding-right: .8em;
 }
 
 .cross:before, .cross:after {
@@ -38,7 +58,6 @@ input {
   border-top: 2px solid #FFFFFF;
   width: 15px;
   display: block;
-  margin-top: 18px;
   transition: 0.3s;
 }
 
@@ -50,7 +69,7 @@ input {
 .content {
   box-sizing: border-box;
   font-size: 0.9em;
-  margin: 5px 10px;
+  margin: .5em;
   max-height: 0;
   overflow: hidden;
   transition: max-height, .2s;
@@ -59,42 +78,21 @@ input {
 .content:after {
   box-sizing: border-box;
   font-size: 0.9em;
-  margin: 10px 10px;
+  margin: .5em;
   max-height: 0;
   overflow: hidden;
-  transition: max-height, .2s;
+  transition: max-height, all .25s ease-in-out;
 }
 
-input:checked ~ .content {
+#reasons input:checked ~ .content {
   max-height: 2000px;
   transition: max-height, .2s;
 }
 
-input:checked ~ .accordion-label .cross:before {
+#reasons input:checked ~ .accordion-label .cross:before {
   transform: rotate(180deg);
 }
 
-input:checked ~ .accordion-label .cross:after {
+#reasons input:checked ~ .accordion-label .cross:after {
   transform: rotate(0deg);
 }
-
-/*
-.questions{
-    margin-top:20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height, .5s;
-}
-
-.questions label{
-    border:none;
-    box-shadow: none;
-    margin:0;
-}
-
-input:checked ~ .questions {
-    max-height: 400px;
-    border-bottom:2px solid #3E474F;
-    transition: 1s;
-}
-*/ 

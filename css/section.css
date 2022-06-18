@@ -4,6 +4,10 @@ section {
   justify-content: center;
 }
 
+section .container {
+  padding: 0 1em;
+}
+
 section .content-container {
   max-width: 50.625em;
 }
@@ -60,12 +64,10 @@ section .content-container {
 .citation .container {
   display: flex;
   justify-content: center;
-  padding: 0;
 }
 
 .citation .content-container {
   max-width: 50.625em;
-  padding: 0 1em;
 }
 
 .citation .cite {
