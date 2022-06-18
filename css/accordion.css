@@ -1,0 +1,100 @@
+.wrapper {
+  max-width: 80%;
+  width: 100%;
+  margin: 10vh auto;
+}
+
+input {
+  display: none;
+}
+
+.accordion-label {
+  display: flex;
+  width: 100%;
+  overflow-wrap: break-word;
+  /*height: 100px;*/
+  cursor: pointer;
+  border: 3px solid #1A3967;
+  background-color: #1A3967;
+  color: #FFFFFF;
+  user-select: none;
+  box-shadow: 0px 0px 10px 0px grey;
+}
+
+.accordion-label div:first-child {
+  width: 100%;
+  line-height: 45px;
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+.cross {
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.cross:before, .cross:after {
+  content: '';
+  border-top: 2px solid #FFFFFF;
+  width: 15px;
+  display: block;
+  margin-top: 18px;
+  transition: 0.3s;
+}
+
+.cross:after {
+  transform: rotate(90deg);
+  margin-top: -2px;
+}
+
+.content {
+  box-sizing: border-box;
+  font-size: 0.9em;
+  margin: 5px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height, .2s;
+}
+
+.content:after {
+  box-sizing: border-box;
+  font-size: 0.9em;
+  margin: 10px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height, .2s;
+}
+
+input:checked ~ .content {
+  max-height: 2000px;
+  transition: max-height, .2s;
+}
+
+input:checked ~ .accordion-label .cross:before {
+  transform: rotate(180deg);
+}
+
+input:checked ~ .accordion-label .cross:after {
+  transform: rotate(0deg);
+}
+
+/*
+.questions{
+    margin-top:20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height, .5s;
+}
+
+.questions label{
+    border:none;
+    box-shadow: none;
+    margin:0;
+}
+
+input:checked ~ .questions {
+    max-height: 400px;
+    border-bottom:2px solid #3E474F;
+    transition: 1s;
+}
+*/ 

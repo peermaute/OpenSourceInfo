@@ -4,7 +4,7 @@
   padding: 1.5em;
 }
 
-#menuToggle {
+#menu-toggle {
   height: 1.5em;
   display: block;
   position: relative;
@@ -35,7 +35,7 @@
   color: #1A3967;
 }
 
-#menu #firstReset {
+#menu #first-reset {
   border-top: 0.1em solid #eff2f6;
 }
 
@@ -43,7 +43,7 @@
   color: #ed7f22;
 }
 
-#menuToggle #burger {
+#menu-toggle #burger {
   display: block;
   width: 2em;
   height: 100%;
@@ -63,7 +63,7 @@
 /*
  * Just a quick hamburger
  */
-#menuToggle span {
+#menu-toggle span {
   display: block;
   width: 2em;
   height: 0.25em;
@@ -82,11 +82,11 @@
   opacity 0.55s ease;
 }
 
-#menuToggle span:first-child {
+#menu-toggle span:first-child {
   transform-origin: 0 0;
 }
 
-#menuToggle span:nth-last-child(2) {
+#menu-toggle span:nth-last-child(2) {
   transform-origin: 0 100%;
 }
 
@@ -94,7 +94,7 @@
  * Transform all the slices of hamburger
  * into a cross-mark.
  */
-#menuToggle input:checked ~ span {
+#menu-toggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #1A3967;
@@ -103,7 +103,7 @@
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3) {
+#menu-toggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -111,7 +111,7 @@
 /*
  * Oh-yeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2) {
+#menu-toggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -138,7 +138,7 @@
 }
 
 
-#menuToggle #burger:checked ~ ul {
+#menu-toggle #burger:checked ~ ul {
   transform: none;
 }
 
