@@ -19,9 +19,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/inline.css">
-  <link rel="stylesheet" href="css/burgerMenu.css">
   <link rel="stylesheet" href="css/section.css">
+  <link rel="stylesheet" href="css/burgerMenu.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -47,15 +46,15 @@
   <nav class="mobile header">
     <div class="mobile-container">
       <nav role="navigation">
-        <form name="mobileHeaderState">
-          <div id="menuToggle">
+        <form name="mobile-header-state">
+          <div id="menu-toggle">
             <label for="burger"></label>
             <input type="checkbox" id="burger"/>
             <span></span>
             <span></span>
             <span></span>
             <ul id="menu">
-              <li><label for="reset0" id="firstReset">FOSS vs Proprietär</label>
+              <li><label for="reset0" id="first-reset">FOSS vs Proprietär</label>
                 <button id="reset0" type="reset" onclick="window.location.href='#vs'"></button>
               </li>
               <li><label for="reset1">Einsatz</label>
@@ -86,21 +85,151 @@
     </div>
   </nav>
 </header>
-<header class="ov-page-hero">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-</header>
+<section class="ov-page-hero">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Warum entscheidest Du Dich jeden Tag gegen Open Source?</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="intro" class="intro section-grey">
+  <div class="container">
+    <div class="content-container">
+      <p>Ein neues Program, eine andere App.<br/>
+        Mal eben eine Datei abspeichern.</p>
+      <p>In jeder dieser Momente triffst du eine Entscheidung.<br/>
+        Häufig gegen OpenSource.</p>
+      <p>Doch was unterscheidet eigentlich Open Source?<br/>
+        Und welche Folgen hat diese Entscheidung?</p>
+    </div>
+  </div>
+</section>
 <section id="vs" class="vs">
-  <div class="container" style="background-color: red; height: 50vh"></div>
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Warum entscheidest Du Dich jeden Tag gegen Open Source?</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
 </section>
-<section id="use" class="use section-grey" style="background-color: orange; height: 50vh">
-  <input type="button">
+<section id="citation" class="citation section-grey">
+  <div class="container">
+    <div class="content-container">
+      <div class="cite">"Der meiste Code, der deinen Alltag beeinflusst, ist ein Geheimnis der Unternehmen, die ihn
+        besitzen:
+        Selbst wenn du die nötige Zeit und das nötige Wissen hättest, wäre es dir nicht erlaubt, nachzusehen, was der
+        Code genau tut – und ob er Schwachstellen, oder gar eine geheime Hintertür zu deinen Daten enthält."
+      </div>
+      <a class="source" href="https://felixreda.eu/2015/02/1-million-fuer-open-source-sicherheit">Quelle:
+        https://felixreda.eu/2015/02/1-million-fuer-open-source-sicherheit</a>
+    </div>
+  </div>
 </section>
-<section id="reasons" class="reasons" style="background-color: blue; height: 50vh"></section>
-<section id="active" class="active section-grey" style="background-color: green; height: 50vh"></section>
-<section id="initiative" class="initiative"></section>
-<section id="beyond" class="beyond section-grey"></section>
-<section id="infos" class="infos"></section>
-<section id="contact" class="contact section-grey"></section>
+<section id="definition" class="definition">
+  <div class="container">
+    <div class="content-container">
+      <h1>Falls Du Dich fragst, wie man FOSS eigentlich genau definiert</h1>
+      <div class="small-text-box">
+        <p>
+          FOSS (Free and OpenSource Software) beschreibt Software dessen Quellcode der Öffentlichkeit zugänglich gemacht
+          wurde. Sie unterliegt vier wesentlichen Freiheiten:
+        </p>
+        <ul>
+          <li>Freiheit 0: Die Freiheit, das Programm auszuführen, wie man möchte, für jeden Zweck.</li>
+          <li>Freiheit 1: Die Freiheit, die Funktionsweise des Programms zu untersuchen und eigenen Bedürfnissen der
+            Datenverarbeitung anzupassen.*
+          </li>
+          <li>Freiheit 2: Die Freiheit, das Programm weiterzuverbreiten und damit seinen Mitmenschen zu helfen.</li>
+          <li>Freiheit 3: Die Freiheit, das Programm zu verbessern und diese Verbesserungen der Öffentlichkeit
+            freizugeben, damit die gesamte Gemeinschaft davon profitiert.*
+          </li>
+        </ul>
+        <div>
+          <div id="site-note">
+            * Der Zugang zum Quellcode ist dafür Voraussetzung.
+          </div>
+          <a id="more-source" class="source" href="https://www.gnu.org/philosophy/free-sw.de.html">
+            Mehr: Freie Software. Was ist das?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="use" class="use section-grey">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">USE</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="reasons" class="reasons">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Reasons</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="active" class="active section-grey">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Active</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="initiative" class="initiative">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Initiative</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="beyond" class="beyond section-grey">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Beyond</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="infos" class="infos">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Infos</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact section-grey">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Contact</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
 <footer></footer>
 </body>
 
