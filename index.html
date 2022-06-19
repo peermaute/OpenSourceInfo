@@ -1,1514 +1,488 @@
-<!DOCTYPE html>
-<html lang="de">
+<!doctype html>
+<html class="no-js" lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Source</title>
-    <link rel="shortcut icon" href="res/logo/favicon.ico" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- TODO: Fix appearance favicon -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> -->
-    <!-- CSS only -->
+  <meta charset="utf-8">
+  <title>Open Source</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/65d0c821fb.js" crossorigin="anonymous"></script>
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/section.css">
+  <link rel="stylesheet" href="css/burgerMenu.css">
+  <link rel="stylesheet" href="css/accordion.css">
+
+  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-    <header>
-        <a name="top"></a>
-        <div class="headerDiv">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#FossVsProp">FOSS vs Proprietär</a>
-                    </li>
-                    <li>|</li>
-                    <li>
-                        <a href="#einsatz">Einsatz</a>
-                    </li>
-                    <li>|</li>
-                    <li>
-                        <a href="#gruendeGegenFoss">Gründe gegen Open Source</a>
-                    </li>
-                    <li>|</li>
-                    <li>
-                        <a href="#aktivWerden">Aktiv werden!</a>
-                    </li>
-                    <li>|</li>
-                    <li>
-                        <a href="#initiativen">Initiativen</a>                        
-                    </li>
-                    <li>|</li>
-                    <li>
-                        <a href="#nichtNurSoftware">Nicht nur Software</a>                        
-                    </li>
-                    <li>|</li>
-                    <li>
-                        <a href="#mehrInfos">Mehr Infos</a>                        
-                    </li>
-                    <li>|</li>
-                    <li>
-                        <a href="#kontakt">Kontakt</a>                        
-                    </li>
-                </ul>
-            </nav>
-            <hr id="header-separator">
-            <div class="headline">
-                <h1>Warum entscheidest Du dich jeden Tag gegen Open Source?</h1>
-                <p>Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich beantworten.
-                </p>
-            </div>
+<header class="site-header">
+  <nav class="desktop header">
+    <div class="container">
+      <div class="row">
+        <div class="nav-wrapper">
+          <a class="button" href="#vs">FOSS vs Proprietär</a><span></span>
+          <a class="button" href="#use">Einsatz</a><span></span>
+          <a class="button" href="#reasons">Gründe gegen Open Source</a><span></span>
+          <a class="button" href="#active">Aktiv werden!</a><span></span>
+          <a class="button" href="#initiative">Initiativen</a><span></span>
+          <a class="button" href="#beyond">Nicht nur Software</a><span></span>
+          <a class="button" href="#infos">Mehr Infos</a><span></span>
+          <a class="button" href="#contact">Kontakt</a>
         </div>
-    </header>
-    <div class="openSourceDiv">
-        <i id="openSourceIcon" class="fa-brands fa-osi"></i>
+      </div>
     </div>
-    <section>
-        <h3>Ein neues Program, eine andere App. <br> Mal eben eine Datei abspeichern.
-            <br>
-            <br>
-            <p> In jeder dieser Momente triffst du eine Entscheidung. <br> Häufig gegen OpenSource.</p>
-            <p>Doch was unterscheidet eigentlich Open Source? <br> Und welche Folgen hat diese Entscheidung?</p>
-        </h3>
-    </section>
-    <hr class="section-separator">
-    <section id="FossVsProp">
-        <h1>Was bietet eigentlich Software?</h1>
-        <div class="flex-container">
-            <div class="flex-container-vertical">
-                <h1>Open Source</h1>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2>Frei zugänglich</h2>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Freie Software ist für jeden Menschen zugänglich und einsehbar.
-                                <br> Jeder kann sie verifizieren, erweitern und verbreiten. Unabhängig von seiner
-                                Herkunft oder finanzieller Lage
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2>Nachhaltigkeit <br> & <br> Vielfalt</h2>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Open Source schafft offenes Wissen. Eine Basis auf der zukünftige Projekte aufbauen
-                                können.
-                                Das Rad muss nicht neu Erfunden werden, denn einmal geschaffene Lösungen für Probleme
-                                können auch an anderer Stelle beitragen.
-                                <br> Diese Freiheit fördert Vielfalt
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2>Sicherheit <br> & <br> Transparenz</h2>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Freie Software schafft Tranzparenz, denn sie kann von unabhängigen Stellen verifiziert
-                                werden.
-                                Backdoors, unerwünschte Datenweitergabe oder Zensur können durch Code-Reviews gefunden
-                                werden.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2>Community Driven</h2>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>
-                                Jeder Mensch kann aktiv die Entwicklung eines Projektes mitgestalten.
-                                Es entsteht ein offenes Forum für Ideen, Austausch und Disskusion, in der die Community
-                                über den Fortgang der Software entscheidet.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex-container-vertical">
-                <h1>Proprietäre Software</h1>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2>Wettbewerb</h2>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Die Entwicklung eines proprietären Produkts kann einen Vorteil gegenüber der
-                                Konkurrenz darstellen.
-                                Dieser Vorteil lässt sich in eine Martkdominanz oder im extremen Fall in einer
-                                Monopolstellung für einen bestimmten Bereich ausbauen.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2>Qualität durch finanzielle Ressourcen</h2>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Die in der proprietären Entwicklung angewendeten finanziellen Ressourcen können Anreize
-                                für eine innovative und beschleunigte Entwicklung sein. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2>Regulierte Nutzung</h2>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Das Unternehmen kann die Verwendung und Verbreitung des Programms durch geschlossenen
-                                Sourcecode oder Lizensierung aktiv einschränken und regulieren. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2>Gerechte Entlohung</h2>
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Bei der proprietären Entwicklung von Software steht in der Regel die Vermarktung eines
-                                Produkts (zb. die Software selbst) im Vordergrund.
-                                Eine angemessene Entlohnung ist hier häufig realistischer als bei Open Source.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <hr class="section-separator">
-    <section>
-        <div class="quote_block">
-            <h1> "Der meiste Code, der deinen Alltag beeinflusst, ist ein Geheimnis der Unternehmen, die ihn besitzen:
-                <br>
-                Selbst wenn du die nötige Zeit und das nötige Wissen hättest, wäre es dir nicht erlaubt, nachzusehen,
-                was der Code genau tut – und ob er Schwachstellen, oder gar eine geheime Hintertür zu deinen Daten
-                enthält."
-            </h1>
-        </div>
-        <p> <br>Quelle: <a
-                href="https://felixreda.eu/2015/02/1-million-fuer-open-source-sicherheit/">felixreda.eu/2015/02/1-million-fuer-open-source-sicherheit
-            </a>
-        </p>
-    </section>
-    <hr class="section-separator">
-    <section>
-        <h1>
-            Falls Du Dich fragst, wie man FOSS eigentlich genau definiert
-        </h1>
+  </nav>
+  <nav class="mobile header">
+    <div class="mobile-container">
+      <nav role="navigation">
+        <form name="mobile-header-state">
+          <div id="menu-toggle">
+            <label for="burger"></label>
+            <input type="checkbox" id="burger"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <li><label for="reset0" id="first-reset">FOSS vs Proprietär</label>
+                <button id="reset0" type="reset" onclick="window.location.href='#vs'"></button>
+              </li>
+              <li><label for="reset1">Einsatz</label>
+                <button id="reset1" type="reset" onclick="window.location.href='#use'"></button>
+              </li>
+              <li><label for="reset2">Gründe gegen Open Source</label>
+                <button id="reset2" type="reset" onclick="window.location.href='#reasons'"></button>
+              </li>
+              <li><label for="reset3">Aktiv werden!</label>
+                <button id="reset3" type="reset" onclick="window.location.href='#active'"></button>
+              </li>
+              <li><label for="reset4">Initiativen</label>
+                <button id="reset4" type="reset" onclick="window.location.href='#initiative'"></button>
+              </li>
+              <li><label for="reset5">Nicht nur Software</label>
+                <button id="reset5" type="reset" onclick="window.location.href='#beyond'"></button>
+              </li>
+              <li><label for="reset6">Mehr Infos</label>
+                <button id="reset6" type="reset" onclick="window.location.href='#infos'"></button>
+              </li>
+              <li><label for="reset7">Kontakt</label>
+                <button id="reset7" type="reset" onclick="window.location.href='#contact'"></button>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </nav>
+    </div>
+  </nav>
+</header>
+<section class="ov-page-hero">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Warum entscheidest Du Dich jeden Tag gegen Open Source?</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="intro" class="intro section-grey">
+  <div class="container">
+    <div class="content-container">
+      <p>Ein neues Program, eine andere App.<br/>
+        Mal eben eine Datei abspeichern.</p>
+      <p>In jeder dieser Momente triffst du eine Entscheidung.<br/>
+        Häufig gegen OpenSource.</p>
+      <p>Doch was unterscheidet eigentlich Open Source?<br/>
+        Und welche Folgen hat diese Entscheidung?</p>
+    </div>
+  </div>
+</section>
+<section id="vs" class="vs">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Warum entscheidest Du Dich jeden Tag gegen Open Source?</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="citation" class="citation section-grey">
+  <div class="container">
+    <div class="content-container">
+      <div class="cite">"Der meiste Code, der deinen Alltag beeinflusst, ist ein Geheimnis der Unternehmen, die ihn
+        besitzen: Selbst wenn du die nötige Zeit und das nötige Wissen hättest, wäre es dir nicht erlaubt, nachzusehen,
+        was der
+        Code genau tut – und ob er Schwachstellen, oder gar eine geheime Hintertür zu deinen Daten enthält."
+      </div>
+      <a class="source" href="https://felixreda.eu/2015/02/1-million-fuer-open-source-sicherheit">Quelle:
+        https://felixreda.eu/2015/02/1-million-fuer-open-source-sicherheit</a>
+    </div>
+  </div>
+</section>
+<section id="definition" class="definition">
+  <div class="container">
+    <div class="content-container">
+      <h1>Falls Du Dich fragst, wie man FOSS eigentlich genau definiert</h1>
+      <div class="small-text-box">
         <p>
-            FOSS (Free and OpenSource Software) beschreibt Software dessen Quellcode der Öffentlichkeit zugänglich
-            gemacht wurde. Sie unterliegt vier wesentlichen Freiheiten:
-        <div class="body_list">
-            <li>Freiheit 0: Die Freiheit, das Programm auszuführen, wie man möchte, für jeden Zweck.</li>
-            <li>Freiheit 1: Die Freiheit, die Funktionsweise des Programms zu untersuchen und eigenen Bedürfnissen der
-                Datenverarbeitung anzupassen.*</li>
-            <li>Freiheit 2: Die Freiheit, das Programm weiterzuverbreiten und damit seinen Mitmenschen zu helfen.</li>
-            <li>Freiheit 3: Die Freiheit, das Programm zu verbessern und diese Verbesserungen der Öffentlichkeit
-                freizugeben, damit die gesamte Gemeinschaft davon profitiert.*</li>
-
-            <br>
-        </div> * Der Zugang zum Quellcode ist dafür Voraussetzung.
-
+          FOSS (Free and OpenSource Software) beschreibt Software dessen Quellcode der Öffentlichkeit zugänglich
+          gemacht wurde. Sie unterliegt vier wesentlichen Freiheiten:
         </p>
-        <h4>Mehr: <a href="https://www.gnu.org/philosophy/free-sw.de.html">Freie Software. Was ist das?</a></h4>
-    </section>
-    <hr class="section-separator">
-    <section id="einsatz">
-        <h1>Was wird denn eigentlich nun wo eingesetzt ? </h1>
+        <ul>
+          <li>Freiheit 0: Die Freiheit, das Programm auszuführen, wie man möchte, für jeden Zweck.</li>
+          <li>Freiheit 1: Die Freiheit, die Funktionsweise des Programms zu untersuchen und eigenen Bedürfnissen der
+            Datenverarbeitung anzupassen.*
+          </li>
+          <li>Freiheit 2: Die Freiheit, das Programm weiterzuverbreiten und damit seinen Mitmenschen zu helfen.</li>
+          <li>Freiheit 3: Die Freiheit, das Programm zu verbessern und diese Verbesserungen der Öffentlichkeit
+            freizugeben, damit die gesamte Gemeinschaft davon profitiert.*
+          </li>
+        </ul>
+        <div>
+          <div id="site-note">
+            * Der Zugang zum Quellcode ist dafür Voraussetzung.
+          </div>
+          <a id="more-source" class="source" href="https://www.gnu.org/philosophy/free-sw.de.html">
+            Mehr: Freie Software. Was ist das?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="use" class="use section-grey">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">USE</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="reasons" class="reasons">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Warum werden nicht noch mehr Open Source und offene Standards genutzt?</h1>
+      <div class="hero-subhead">Was ist der Grund für all die eingestellte Software?
+        Die langsame Verbreitung und Rückmigrationen.
+      </div>
+      <div class="wrapper">
+        <div class="wrap">
+          <input type="checkbox" id="tab-1" name="tabs"/>
+          <label class="accordion-label" for="tab-1"></label>
+          <div class="accordion-box">
+            <div class="accordion-headline">Marktmacht & wirtschaftliche Einflüsse in die Politik</div>
+            <div class="cross"></div>
+          </div>
+          <div class="content">
+            <p>Sei es die Tabakindustrie, Pharmaunternehmen oder der Automobilsektor. Die Einflussnahme durch abgesandte
+              Lobbyisten bemerken wir zunehmend in den unterschiedlichsten Bereichen.</p>
 
+            <p>Doch keiner dieser Bereiche unterhält so viele Interessensvertreter, steckt solche Geldbeträge in das
+              Lobbying, wie die IT-Branche.</p>
 
-        <div class="slideshow">
-            <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel "
-                data-interval="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item active blocksatz">
-                        <h1>Privater Bereich</h1>
-                        <i>
-                            <img class="icon" src="res/icons/icons8-ms-word-48.png" alt="MSOfficeIcon">
-                            <img class="icon" src="res/icons/icons8-adobe-creative-cloud-96.png" alt="AdobeIcon">
-                            <img class="icon" src="res/icons/icons8-mac-os-100.png" alt="MacIcon">
-                            <img class="icon" src="res/icons/icons8-google-drive-96.png" alt="GoogleDriveIcon">
-                            <img class="icon" src="res/icons/icons8-spotify-96.png" alt="SpotifyIcon">
-                            <img class="icon" src="res/icons/icons8-netflix-100.png" alt="NetflixIcon">
-                        </i>
-                        <br>
-                        <br>
-                        <p>
-                            Viel der im privaten Bereich eingesetzten Software sind Produkte großer Unternehmen. <br>
-                            In allen Fällen zahlen wir als Endanwender. Häufig mit unseren Daten, aber teilweise auch
-                            direkt als
-                            Teil eines monatlichen Abos.
-                            <br>
-                            Doch wer garantiert uns eigentlich, dass wir all die fein säuberlich erstellten Playlists in
-                            Spotify, die
-                            lang erarbeiteten Photoshopprojekte oder getippten GoogleDocs Dokumente morgen noch zu den
-                            derzeitigen
-                            Konditionen
-                            erreichen können ?
-                        </p>
-                        <h4>Auszug aus den Google Richtlinien:</h4>
-                        <blockquote class="quote_block"
-                            cite="https://support.google.com/docs/answer/148505?visit_id=637819466039413237-333646249&hl=de&rd=1#zippy=%2Cverwenden-und-einreichen-von-inhalten">
-                            <p>"Sobald wir über einen potenziellen Verstoß [gegen die Richtlinien] informiert werden,
-                                prüfen wir den
-                                Inhalt und ergreifen gegebenenfalls entsprechende Maßnahmen. Dies kann beispielsweise
-                                die
-                                <b>Beschränkung
-                                    des Zugriffs </b>auf den Inhalt, die <b>Entfernung von Inhalten </b> sowie die
-                                Beschränkung oder
-                                Sperrung des
-                                Zugriffs auf Google-Produkte für den betreffenden Nutzer beinhalten."
-                            <p>
-                                Siehe:<a
-                                    href="https://support.google.com/docs/answer/148505?visit_id=637819466039413237-333646249&hl=de&rd=1#zippy=%2Cverwenden-und-einreichen-von-inhalten"><br>Google
-                                    Richtlinien</a>
+            <p>Angeführt von Google, Facebook, Microsoft, Apple und Huawei, allein die 10 größten Tech-Konzerne zahlen
+              jedes Jahr 32 Millionen Euro für das Festigen ihrer Marktmacht.</p>
 
-                        </blockquote>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="blocksatz">
-                            <h1>Öffentliche Verwaltung</h1>
-                            <p>Windows & WindowsServer, MSOffice, GoogleCloud, Adobe,MSTeams, ZOOM, SAP, Jira</p>
+            <p>Über 100 Millionen die von Anbietern Proprietärer Produkte jedes Jahr unter anderem darin gesteckt
+              werden, dass selbst erfolgreiche Projekte wie LiMux zurückmigriert werden, dass politische Anreize für
+              freie Software und Policies, die den Einsatz von offenen Standards verpflichten würden, vermieden werden.
+              <br>Die dazu führen, dass wir statt transparenter Vergabeverfahren nur geschwärzte Seiten eines per SMS
+              abgeschlossenen Vertrages zu Gesicht bekommen.</p>
+            <!-- #TODO Link Beispiel Finden oder weglassen -->
 
-                            <p> In der öffentlichen Verwaltung ist vor allem sichere, stabile und datenschutzkonforme
-                                Software
-                                wichtig.
-                                <br>
-                                Eine große Menge an sensiblen Nutzerdaten müssen verarbeitet werden. <br>
-                                Auch hier finden wir größtenteils proprietäre Lösungen.
-                            </p>
-                            <blockquote class="quote_block"
-                                cite="https://netzpolitik.org/2020/datenschutzkonferenz-deutsche-verwaltung-nutzt-microsoft-produkte-nicht-rechtskonform/">
-                                "Bereits im vergangenen Jahr stellte eine Marktanalyse im Auftrag des
-                                Bundesinnenministeriums fest, dass
-                                <b>96 Prozent</b> aller Behörden Produkte aus Microsoft-Office-Paket verwenden."
-                                <p><a
-                                        href="https://netzpolitik.org/2020/datenschutzkonferenz-deutsche-verwaltung-nutzt-microsoft-produkte-nicht-rechtskonform/">Quelle</a>
-                                </p>
-                            </blockquote>
+            <p>Freie Software als nicht kommerziell getriebene Bewegung besitzt solch eine Form des Lobbyismus
+              nicht.<br>
+              Hier sind wir es. Die Menschen, die mit offenen Augen und Bewusstsein dafür einstehen müssen, was sich
+              unsere Freiheit nennt.</p>
 
-                            <p> Die Lizensen hierfür werden mit öffentlichen Geldern bezahlt, öffentliche
-                                Ausschreibungen
-                                sollen ein
-                                gerechtes Vergabeverfahren gewährleisten. <br>
-                                Doch wie kommt es dann, dass wir auf der Suche nur eine große Menge an geschwärtzten
-                                Verträgen zu Gesicht
-                                bekommen ?
-                            </p>
-                        </div>
-
-                        <p>Siehe <a
-                                href="https://fragdenstaat.de/dokumente/142633-kooperationsvertrag-luca-app-mit-schleswig-holstein/"><b>Kooperationsvertrag
-                                    Luca-App mit Schleswig-Holstein</b></a>
-                        </p>
-                    </div>
-                    <div class="carousel-item blocksatz">
-                        <h1>Schnittstellen</h1>
-                        <p>Ein Großteil dieser Programme erzeugen und nutzen proprietäre Dateiformate:.psd, .ppt, .xls
-                            usw...</p>
-
-                        <p>Einmal gespeicherte Daten lassen sich auch nur noch von diesen Programmen verwenden, da die
-                            Spezifikation der Protokolle und Formate nicht offengelegt wurde.
-                            Eine herstellerübergreifende Verwendung wird somit ausgeschlossen.
-                            <br>
-                        </p>
-                        <p>Ein maschienenlesbarer Zugang über eine sogenanten öffentliche
-                            <span class="tooltip-native"> API<span class="tooltiptext"> Die API (Application Programming
-                                    Interface) – auch
-                                    Programmierschnittstelle genannt -
-                                    ermöglicht es Anwendungen
-                                    miteinander zu kommunizieren</span></span>
-                            wird in manchen Fällen bereitgestellt, aber ist häufig auch nur eingeschränkt nutzbar.
-                        </p>
-                        <p>Die Hersteller behalten die Kontrolle über die Verwendung und können jederzeit die Nutzung
-                            blockieren.
-                            Diese Schnittstellen sind nicht nur für barrierefreie Zugänge wichtig. Auch für die
-                            Integration in
-                            andere
-                            Dienste ist sie notwendig.
-                        </p>
-                        <p style="text-align: center;"> <br>Ein Beispiel für den andauernden Kampf um die Offenlegung
-                            einer API der Bundes
-                            Arbeitsagentur <br><a
-                                href="https://netzpolitik.org/2021/open-data-arbeitsagentur-kaempft-gegen-offene-schnittstelle/"><b>Arbeitsagentur
-                                    kämpft gegen offene Schnittstelle</b></a>
-                            <br>
-                        </p>
-                    </div>
-                </div>
-                <button class="carousel-control-prev slideshow-button" type="button"
-                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+            <h4>Quellen:</h4>
+            <p>
+              <a href="https://www.lobbycontrol.de/2021/08/neue-studie-zur-lobbymacht-von-big-tech/">Neue Studie zur
+                Lobbymacht von Big Tech: Wie Google & Co die EU beeinflussen </a> <br>
+              <a href="https://www.stb-web.de/news/article.php/id/24979">Big Tech gibt fast 100 Millionen Euro für
+                Lobbyarbeit aus</a> <br>
+              <a href="https://www.heise.de/news/Lobbyschlacht-Was-sich-Google-Co-den-Kampf-gegen-EU-Regeln-kosten-lassen-6180025.html">
+                Lobbyschlacht: Was sich Google & Co den Kampf gegen EU-Regeln kosten lassen </a>
+            </p>
+          </div>
         </div>
 
-    </section>
-    <hr class="section-separator">
-    <section>
-        <h1>Aber was ist mit FOSS?</h1>
-        <h2>Findet das keine Verbreitung?</h2>
-        <br>
+        <div class="wrap">
+          <input type="checkbox" id="tab-2" name="tabs"/>
+          <label class="accordion-label" for="tab-2"></label>
+          <div class="accordion-box">
+            <div class="accordion-headline">Bestehendes Lock-In</div>
+            <div class="cross"></div>
+          </div>
+          <div class="content">
+            <h4>Warum kaufst Du Dir neben Deinem IPhone nicht einfach einen Windowslaptop ?<br>
+              Was hält Dich davon ab, neben Photoshop mal Gimp zu nutzen?</h4>
+            <p>Angewandt wird eine Strategie, die sich Vendor-Lock-In nennt. Lassen wir Mark Russinovich, einen
+              leitenden Direktor von Microsoft, das selbst erklären:</p>
 
-        <div class="row">
-            <div class="col">
-                <div class="tabs">
-                    <div class="tab">
-                        <input type="checkbox" id="chck1">
-                        <label class="tab-label" for="chck1">Privater Bereich</label>
-                        <div class="tab-content blocksatz">
-                            <p>
-                                Beispiele für Software im Privaten Bereich:
-                            </p>
-                            <p>
-                                Firefox, VLC, Gimp, OpenOffice, Wordpress, Notepad++, LibreOffice, Linux, Signal,
-                                Thunderbird,
-                                OBS-Studio
-                            </p>
-                            <div class="blocksatz">
-                                <p>Auch im privaten Bereich finden wir eine Reihe an Programmen, die uns sehr vertraut
-                                    erscheinen.
-                                    Nur häufig
-                                    sind wir uns gar nicht bewusst, dass es sich bei dem Programm, das wir nutzen, um
-                                    freie Software
-                                    handelt.
-                                    Und doch stecken in vielen Fällen private Enwickler:innen dahinter, die mit Herzblut
-                                    an den
-                                    Programmen
-                                    mitarbeiten, dafür häufig ihre Freizeit opfern und nur selten durch Spenden eine
-                                    Entlohnung
-                                    erhalten.
-                                </p>
-                                <p>Daneben gibt es auch Organisationen wie die <a
-                                        href="https://www.linuxfoundation.org/about/">Linux-</a>, <a
-                                        href="https://www.documentfoundation.org/">the
-                                        Document-</a> oder <a href="https://foundation.mozilla.org/de/">Mozilla</a>
-                                    Foundation die als
-                                    Stiftungen
-                                    aktiv die Entwicklung dieser Software finanzieren.</p>
-                            </div>
-                            <b>
-                                <p>Eine Übersicht der OpenSource Foundations & Organisationen: <a
-                                        href="https://opensource.com/resources/organizations"><b><br>OpenSource
-                                            Organisations</b></a></p>
-                            </b>
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="checkbox" id="chck2">
-                        <label class="tab-label" for="chck2">Öffentliche Verwaltung</label>
-                        <div class="tab-content ">
-                            <div class="blocksatz">
-                                <p>Beispiele für öffentliche Verwaltung:</p>
-                                <p>Auf den ersten Blick scheinen proprietäre Produkte hier kaum wegzudenken. Ob Windows,
-                                    MSOffice,
-                                    Teams/Skype/Zoom. Die Programme werden seit langem von großen namenhaften
-                                    Herstellern
-                                    bezogen und
-                                    eingesetzt.</p>
-
-                                <p>Doch die Gründe für einen Umstieg auf Freie Software sind nicht nur idealistischer
-                                    Natur,
-                                    sondern finden
-                                    zunehmend auch von öffentlicher Seite Beachtung.<br>
-                                    Sie umfassen eben nicht nur die teils signifikante Kosteneinsparungen, sondern
-                                    besitzen
-                                    auch ein
-                                    politisches Gewicht.<br>
-                                    Häufig zusammengefasst unter dem Begriff der <span class="tooltip-native">"Digitalen
-                                        Souverenität"<span class="tooltiptext"> Die Digitale
-                                            Souveränität beschreibt „die Fähigkeiten und Möglichkeiten von Individuen
-                                            und
-                                            Institutionen,
-                                            ihre Rolle(n) in der digitalen Welt <b>selbständig, selbstbestimmt und
-                                                sicher</b> ausüben zu
-                                            können“</span></span>
-                                    .</p>
-
-                                <p>Dabei spielt die Abhängigkeit zu einzelnen Softwareanbietern, Anpassbar- und
-                                    Erweiterbarkeit,
-                                    Interoperabilität und Sicherheit eine entscheidende Rolle.
-                                    Und so lässt sich eine Reihe an teils sehr erfolgreich umgesetzen FOSS Projekten in
-                                    der
-                                    öffentlichen
-                                    Verwaltung und sogar der <a
-                                        href="https://www.heise.de/newsticker/meldung/Niedersaechsische-Polizei-ruestet-auf-Linux-um-61259.html">Polizei</a>
-                                    und beim <a
-                                        href="https://www.heise.de/ix/meldung/Italienische-Militaerverwaltung-wechselt-zu-LibreOffice-2818854.html">Militär</a>
-                                    beobachten.</p>
-
-                                <p>Als wohl bekanntestes Beispiel ist das LiMux Projekt der Stadtverwaltung München zu
-                                    nennen.
-                                    <!-- Könnte man noch verlinken: https://joinup.ec.europa.eu/collection/open-source-observatory-osor/document/limux-it-evolution-open-source-success-story-never-->
-                                    Hier wurde ein Umstieg auf OpenOffice und eine eigens entwickelte Linux Distribution
-                                    erfolgreich
-                                    umgesetzt. <br>
-                                    <br>
-                                    Warum nur wurde das Projekt dann wenige Jahre später eingstellt und eine
-                                    Rückmigration
-                                    zu Windows
-                                    vorgenommen ?
-                                </p>
-                            </div>
-                            <div class="quote_block">
-                                “Bitte nehmen Sie zur Kenntnis, es geht uns um die Unabhängigkeit. Wir wollen nicht
-                                abhängig sein.”<br>
-                                Dann sagte er [Bill Gates]: “So ein Unsinn, von wem denn abhängig?” <br> “Weil Sie schon
-                                mal da sind:
-                                Von Ihnen natürlich!” <br> Das hat ihn richtig in sich zusammenfallen lassen, und er hat
-                                gesagt: <br> “Es ist
-                                für mich unbegreiflich, das ist Ideologie.”
-                            </div>
-                            <p>Quelle: <a href="https://www.linux-magazin.de/ausgaben/2019/10/interview-2/">Interview
-                                    Christian Ude</a>
-                            </p>
-
-                            <h4> Mehr Dazu: <a href="https://linuxnews.de/2017/11/limux-ende-vorzeigeprojekt/">LiMux –
-                                    Ende eines
-                                    Vorzeigeprojekts</a> </h4>
-
-                            <p>Und das ist kein Einzelfall: <br> <a
-                                    href="https://netzpolitik.org/2014/polizei-niedersachsen-kurz-vor-wechsel-zu-windows-aus-intransparenten-wirtschaftlichkeitsgruenden/">Polizei
-                                    Niedersachsen kurz vor Wechsel zu Windows – aus intransparenten
-                                    „Wirtschaftlichkeitsgründen“</a></p>
-
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="checkbox" id="chck3">
-                        <label class="tab-label" for="chck3">Schnittstellen</label>
-                        <div class="tab-content ">
-                            <div class="blocksatz">
-                                <p>Beispiele für Schnittstellen:</p>
-                                <p>HVV API, Signal API, PNG, CSV, XML, SVG, HTML, JSON </p>
-
-                                <p>Offene Schnittstellen, Protokolle und Dateiformate bilden die Basis für Kommunikation
-                                    über Programm- und
-                                    Dienstgrenzen hinweg. <br>
-                                    Alle Teilnehmenden müssen verstehen können, wie sie miteinander sprechen dürfen.
-                                    Sonst
-                                    wird sich keiner
-                                    verstehen. <br>
-                                    Offene Protokolle sind damit eine <b>Grundvorrausetzung</b> für ein Internet wie wir
-                                    es
-                                    heute kennen.
-                                </p>
-
-                                <p>Auch erst die Offenlegung von Dateiformaten ermöglicht es uns Tabellen (CSV), Bilder
-                                    (PNG), oder Websites
-                                    (HTML) geräte- und herstellerunabhängig zu speichern, auszutauschen und zu
-                                    verwenden.
-                                </p>
-
-                                <p><a href="https://www.computerweekly.com/de/definition/Offene-API">Offene APIs</a>
-                                    schaffen die
-                                    Möglichkeit,
-                                    Informationen zwischen Diensten auszutauschen und diese in andere Anwendungen zu
-                                    integrieren. <br>
-                                    Ein Beispiel ist die <a
-                                        href="https://www.hvv.de/de/fahrplaene/abruf-fahrplaninfos/datenabruf">HVV
-                                        API</a> und die darauf basierende <a href="https://hvv.live/">LiveMap</a></p>
-
-                            </div>
-                            <p>Und warum die Offenlegung und Standardisierung noch lange keine freie und<br> unabhängige
-                                Kommunikation bedeutet, erfährst du hier:<br>
-                                <a href="https://medium.com/codex/human-rights-quic-3c6ddd33aefe">How the Internet’s new
-                                    transport protocol (QUIC) will change digital and human rights</a>
-                            </p>
-
-
-                            <p><b>Mehr zu OpenData-Formaten:</b><br><a
-                                    href="https://openall.info/formate/opendata-formate/#/">OpenData Formate -
-                                    OpenAll</a></p>
-
-                        </div>
-                    </div>
-                </div>
+            <!-- #TODO Vll noch Kürzen -->
+            <div class="quote_block">
+              <p>„Die Windows-API ist so breit, so tief und so funktional, dass die meisten unabhängigen
+                Softwarehersteller verrückt sein müssten, um sie nicht zu benutzen. Außerdem ist sie so tief in den
+                Quelltext vieler Windows-Anwendungen integriert, dass es hohe Wechselkosten gäbe, wenn man stattdessen
+                ein anderes Betriebssystem verwenden wollte. [...] Es sind die Wechselkosten, die den Kunden die Geduld
+                gaben, bei Windows zu bleiben trotz all unseren Fehlern, unseren fehlerhaften Treibern, unseren hohen
+                Gesamtbetriebskosten, unserem Mangel an einer sexy Vision hin und wieder und vielen anderen
+                Schwierigkeiten […] Kunden probieren ständig andere Desktop Plattformen, aber es würde so viel Arbeit
+                machen, zu wechseln, dass sie hoffen, dass wir einfach Windows verbessern, anstatt sie zu zwingen zu
+                wechseln. Kurz gesagt, ohne die exklusiven Franchise Rechte, die sich Windows-API nennen, wären wir
+                schon lange tot."</p>
             </div>
+            <p>Es beginnt ganz harmlos. Kostenlose Angebote der Office-Suite. Studierenden Accounts für die Adobe
+              Creative Cloud. <br>
+              Wir bauen technisches Wissen auf, arbeiten uns in die Produkte hinein und erzeugen und speichern Dateien.
+              Wir gewöhnen uns an die Bedienbarkeit, wollen weitere Systeme einbinden und müssen uns nach kompatiblen
+              Produkten umschauen. Jeder dieser Schritte trägt uns weiter hinein in die Abhängigkeit. </p>
+
+            <p>Und genau deshalb ist die Verwendung und Verbreitung von offenen Standards so wichtig.</p>
+            <p>Mehr dazu: <a href="https://fsfe.org/freesoftware/standards/index.de.html">FSFE: Offene Standards und
+              Lock-In</a></p>
+
+            <p>Und was sich hinter der Microsoft Strategie<br> "Embrace, Extend and Extinguish" verbirgt, erfährst du
+              hier:<br>
+              <a href="https://skeptric.com/embrace-extend-extinguish/">Skeptric.com: Embrace, Extend and Extinguish</a><br>
+              <a href="https://theurbanengine.com/blog//embrace-extend-extinguish-by-microsoft">Urban Engine: "Embrace,
+                Extend, Extinguish" by Microsoft</a></p>
+
+            <p>Und noch mehr zum Lock-In Effekt allgemein und wie er entstanden ist:<br>
+              <a href="https://de-academic.com/dic.nsf/dewiki/873912">de-academic.com - Lock-in-Effect</a></p>
+
+            <p>Zitat Quelle (Aus dem Englischen)
+              <a href="https://web.archive.org/web/20150831031029/https://news.microsoft.com/download/legal/europeancommission/03-24-06EUDecision.pdf"><br>Commission
+                of the european communities - Decision</a>
+            </p>
+          </div>
+
+
+          <div class="wrap">
+            <input type="checkbox" id="tab-3" name="tabs"/>
+            <label class="accordion-label" for="tab-3"></label>
+            <div class="accordion-box">
+              <div class="accordion-headline">Fehlendes Know-how & Struktur</div>
+              <div class="cross"></div>
+            </div>
+            <div class="content">
+              <h4>Community- und Projektmanagement, Planung, Design</h4>
+              <p>Hinter großen Softwareprojekten wie MS-Office stehen in der Regel große Unternehmen mit etablierten
+                Organisationsstrukturen, Finanzierungsstrategien, spezialisierten Teams und aktivem
+                Projektmanagement.</p>
+
+              <p>FOSS hingegen entspringt einer Bewegung, die gerade diese Strukturen, Verpflichtungen und Policies
+                umgeht und auf einer Basis an Freiwilligen aufbaut. Es ist gegenseitiges Vertrauen, Selbstorganisation
+                und Motivation, die den Kern dieser Bewegung bilden.</p>
+
+              <p>Und dies ist häufig der Grund für eine geringe Diversität unter den Beitragenden. Es sind größtenteils
+                Entwickler:innnen die meist durch das Beitragen von Code mit einsteigen. Aufgaben wie z.B. Community
+                Management, Finanzplanung, Marketing und Design werden nur sehr selten und häufig von völlig Fachfremden
+                übernommen.</p>
+
+              <div class="quote_block">
+                <p>“We are not very good at marketing; we are problem solvers.”</p>
+                <p>“We lack a community person. The acceptance for it is missing, we need the money to produce
+                  code.”</p>
+                <p>“I would prefer to be just an engineer. In practice, I am a community manager.”
+                </p>
+              </div>
+
+              <p>Nicht nur fehlen damit Ansprechpartner für mögliche Partnerunternehmen. Für viele Kunden entsteht
+                Vertrauen auch erst mit einer sichtbaren Organisationsstruktur, die Dinge wie Maintenance, Verwaltung
+                und Support gewährleistet.</p>
+
+              <p>Für eine weitere Verbreitung von FOSS braucht es eben nicht nur technische Lösungen. Mindestens genauso
+                wichtig ist Vielfalt, die nicht nur Expertise, sondern auch Bereiche wie Herkunft, sozialen Stand und
+                Geschlecht mit beachtet.</p>
+
+              <h4>All dies und viel mehr, sehr lesenswert erarbeitet, in folgender Studie:</h4>
+              <p><a href="https://recommendations.implicit-development.org/assets/IDE_REPORT_2020.pdf">Roadwork ahead -
+                Evaluating the needs of FOSS communities working on digital infrastructure in the public interest</a>
+              </p>
+
+            </div>
+          </div>
         </div>
+        <div class="wrap">
+          <input type="checkbox" id="tab-4" name="tabs"/>
+          <label class="accordion-label" for="tab-4"></label>
+          <div class="accordion-box">
+            <div class="accordion-headline">Fehlendes Verständnis für die Problematik</div>
+            <div class="cross"></div>
+          </div>
+          <div class="content">
+            <h4>Digitale Souveränität, Abhängigkeit, Selbstgestaltung und das Bewusstsein darüber</h4>
+            <div class="blocksatz">
+              <p>Die Publikationen, die sich mit FOSS beschäftigen, haben in den letzten Jahren stark zugenommen. In
+                Fachkreisen schon länger bekannt, die Gründe auch freie Software als relevante und unentbehrliche Quelle
+                für Programme zu beachten, wird zunehmend in einer Vielzahl an Publikationen und Studien erarbeitet. Und
+                so nimmt das Thema auch in politischen und wirtschaftlichen Fachkreisen langsam Fahrt auf.</p>
 
+              <p>Doch bei privaten und fachfremden Personen fehlt das Verständnis und Bewusstsein für diese Thematik
+                häufig. Nicht nur ein technisches Verständnis für die Funktionsweise und Bedeutung von z.B. Offenen
+                Standards fehlt, auch die wirtschaftlichen Strategien, die uns in den Lock-In treiben, werden nur selten
+                durchblickt.</p>
 
+              <p>Oder bist Du Dir bei jedem Druck auf den "Speichern" Button bewusst, ob Deine Arbeit gerade in einem
+                proprietären oder freien Dateiformat gespeichert wird?</p>
 
-
-
-
-    </section>
-    <section>
-
-
-
-
-
-
-
-
-
-        <div class="row">
-            <div class="col">
-                <div class="tabs">
-                    <div class="tab">
-                        <input type="checkbox" id="chck4">
-                        <label class="tab-label" for="chck4">Infrastruktur</label>
-                        <div class="tab-content blocksatz">
-                            <p>Apache, PostGres, MySQL, NextCloud, OwnCloud, Kubernetes, Docker, Wordpress, OpenSSL,
-                                letsencrypt</p>
-
-
-                            <h4>Wie sieht es nun mit der Infrastruktur aus?</h4>
-
-                            <div class="quote_block">
-                                <p>"Open Source ist unvermeidlich"</p>
-                            </div>
-
-                            <p>Natürlich haben die proprietären Anbieter auch ihre Produkte. Aber das Gesammtbild ist
-                                ein anderes.</p>
-
-                            <p>Über <a
-                                    href="https://news.netcraft.com/archives/2017/01/12/january-2017-web-server-survey.html">die
-                                    Hälfte aller Websites</a> werden von den weltweit meißtgenutzten, freien Webservern
-                                (Apache httpd
-                                und Nginx) betrieben.<br>
-                                Auch für die Bereitstellung von Inhalten durch ein <span
-                                    class="tooltip-native">Content-Management-System<span class="tooltiptext"> Ein
-                                        Content-Management-System
-                                        (kurz CMS) ist eine Software, die zur Erstellung und Verwaltung von Inhalten –
-                                        in Text-, Bild-,
-                                        Video- oder sonstiger Form – verwendet wird. CMS werden vor allem zum Betreiben
-                                        von Websites,
-                                        aber
-                                        auch für „Offline-Plattformen“ (in Intranetzwerken), eingesetzt. </span></span>
-                                <!--- Quelle: https://www.textbroker.de/content-management-system -->
-                                ist Wordpress mit einem Marktanteil von über 64% <a
-                                    href="https://w3techs.com/technologies/overview/content_management"> mit Abstand
-                                    führend</a>.
-                            </p>
-
-                            <p>Ob
-                                Server, Betriebssystem, Virtualisierungssoftware, Cloud
-                                Computing, Continous Integration, Middleware/Application Server, Firewalls, Cloud
-                                Software oder
-                                Datenbanksystem. </p>
-                            <p>Der <b>Großteil des Internets</b> basiert auf freien Software Komponenten! <br>
-
-                            <p>Und allen voran sind es freie Programmiersprachen, die mit 82% die größte Verbreitung
-                                erhalten.</p>
-
-                            <p>Und das nicht ohne Grund.</p>
-                            <p>Vor allem die offenen Standards, also die Interoperabilität zu anderen Systemen, welche
-                                einen modularen
-                                Aufbau ermöglichen, haben zu solch einer Verbreitung geführt. <br>
-                                Gerade im Unternehmensumfeld, in dem sehr spezifische Anforderungen an die Software
-                                gestellt werden und
-                                Integration mit weiteren Systemen notwendig sind, wird diese Flexibilität hoch
-                                geschätzt. <br>
-                                Aber auch die große Auswahl an Tools, das breite Angebot an Support aus der Community,
-                                die Sicherheit
-                                durch
-                                schnelle Updates und die Unabhängigkeit zu großen Herstellern sind sehr wichtige Punkte.
-                            </p>
-
-                            <b>Quelle und Mehr: <a
-                                    href="https://www.onegov.ch/content/uploads/2021/06/OSSStudie_2021.pdf">Studie
-                                    Verbreitung und Einsatz von OpenSource</a></b>
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="checkbox" id="chck5">
-                        <label class="tab-label" for="chck5">Politik</label>
-                        <div class="tab-content">
-                            <div class="blocksatz">
-                                <!-- Könnte man auch mehr in Richtung OpenGovernment drehen.. -->
-                                <!--- https://www.verwaltung-innovativ.de/SharedDocs/Publikationen/eGovernment/open_government_data_deutschland_langfassung.pdf?__blob=publicationFile&v=5 -->
-                                <!--- Open Public Data: https://www.digitale-technologien.de/DT/Redaktion/DE/Downloads/Publikation/SSW/2020/SSW_Open_Public_Data_in_Deutschland.pdf?__blob=publicationFile&v=11-->
-                                <!---Open Government - Öffnung von Staat und Verwaltung -  https://www.zu.de/institute/togi/assets/pdf/JvL-100509-Open_Government-V2.pdf -->
-                                <!--- -->
-
-
-                                <h4>Was hört man eigentlich aus der Politik zum Thema Open Source?</h4>
-
-
-                                <p> Politisch gewinnt das Thema Open Source zunehmend interesse.</p>
-                                <p>Die Bedeutung der
-                                    Unnabhängigkeit und der
-                                    Möglichkeit zur Wertschöpfung durch quelloffene Software scheint langsam anzukommen.
-                                    So meint man zumindest, wenn man sich die beschlossene Open Source Strategie der EU
-                                    ansieht.</p>
-                                <p>Unter dem Titel "Offenes Denken" wird <a
-                                        href="https://ec.europa.eu/info/sites/default/files/de_ec_open_source_strategy_2020-2023.pdf">über
-                                        16 Seiten</a> ein Umdenken hin zu Open Source und Freier
-                                    Software beschrieben.</p>
-
-                                <div class="quote_block">
-                                    </p>"Mit dieser Strategie nähert sich die Kommission weiter an die Open-Source-
-                                    Gemeinschaft an, in der sie als flexible Bearbeiterin und aktive Beteiligte
-                                    auftreten
-                                    will." </p>
-                                </div>
-
-
-                                <div class="quote_block">
-                                    <p>"Quelloffenheit wird als
-                                        Katalysator für Veränderungen anerkannt"</p>
-                                </div>
-
-                                <br>
-                                <p style="text-align: center;">Einer der wohl aus politischer Sicht wichtigsten Punkte:
-                                </p>
-
-                                <div class="quote_block">
-                                    <p>"„Open Source“ minimiert das
-                                        Risiko, in Abhängigkeit von einzelnen Anbietern zu geraten genauso wie die
-                                        Gefahr,
-                                        in politische
-                                        Querelen oder Handelsstreitigkeiten verwickelt zu werden;"</p>
-                                </div>
-
-                                <p style="text-align: center;">Ein paar weitere Grundsätze wurden formuliert:</p>
-
-                                <div class="quote_block">
-                                    <p>"Quelloffene Lösungen werden bevorzugt, wenn sie in Bezug auf
-                                        Funktionsumfang, Gesamtkosten und Cybersicherheit gleichwertig sind"</p>
-                                    <p>"Wo immer dies sinnvoll ist, wird die Kommission den Quellcode ihrer künftigen
-                                        IT-Projekte auch
-                                        mit anderen teilen."</p>
-                                </div>
-
-                                <p style="text-align: center;">Eine spanndende Zielsetzung auch hier:</p>
-
-                                <div class="quote_block">
-                                    <p>"Neben dem Teilen von Quellcode sollte die Kommission auch in Erwägung ziehen,
-                                        sich
-                                        an Open-
-                                        Source-Programmgremien und -ausschüssen zu beteiligen, systematische Methoden
-                                        für
-                                        eine gezielte
-                                        Finanzierung zu entwickeln, an der Erhöhung der Sicherheit zu arbeiten und Wege
-                                        zu
-                                        finden, damit
-                                        sich wichtige Open-Source-Projekte selbst tragen."</p>
-                                </div>
-
-
-                                <p>Eine im ersten Moment recht überraschende Veröffentlichung, wenn man die (häufig
-                                    politisch) gescheiterten
-                                    Projekte hin zu Open Source betrachtet.
-                                    Schaut man genauer genauer hin, stellt man den sehr unverpflichtenden Ton in vielen
-                                    Formulierungen
-                                    fest.</p>
-
-                                <p>Denn konkret umgesetzte Anreize findet man wenig - zumindest in Deutschland.<br>
-                                    In anderen Länder wie Italien oder Frankreich sieht das schon anders aus. <br>
-                                    <a
-                                        href="https://www.heise.de/newsticker/meldung/Italien-Vorfahrt-fuer-Open-Source-1709378.html">Italien:
-                                        Open Source Pflicht für öffentliche Verwaltung</a><br>
-                                    <a
-                                        href="https://www.heise.de/newsticker/meldung/Frankreich-Open-Source-fuer-die-oeffentliche-Verwaltung-1717938.html">Frankreich:
-                                        Open Source für die öffentliche Verwaltung </a>
-                                </p>
-                            </div>
-                            <p>Der Vergleich wirkt vernichtend: </p>
-
-
-                            
-                             <div class="lightbox-target" id="tabelle-foss">
-                                <img src="res/tabelle_FOSS_vgl.png"/>
-                                <a class="lightbox-close" href="#fossVergleich"></a>
-                             </div>
-
-
-                            <a name="fossVergleich" class="lightbox"
-                                    href="#tabelle-foss">
-                                    <img src="res/tabelle_FOSS_vgl.png" height="250" style="float:center" /></a>
-                                    
-                                    <p><a href="https://digital-strategy.ec.europa.eu/en/library/study-about-impact-open-source-software-and-hardware-technological-independence-competitiveness-and">
-                                   OpenSource Policies
-                                    vergleich. EU-Studie (CC-BY 4.0)</a></p>
-                            <p><a
-                                    href="https://www.heise.de/news/EU-Studie-Europa-pennt-auch-bei-Open-Source-6194883.html">Heise:
-                                    Europa pennt auch bei Open Source</a>
-                            </p>
-                            <br>
-                            <p>Nur sehr langsam scheinen politische Vorteile und Notwendigkeit von FOSS durchzusickern.
-                            </p>
-                            <p>So finden sich auch im <a
-                                    href="https://www.spd.de/fileadmin/Dokumente/Koalitionsvertrag/Koalitionsvertrag_2021-2025.pdf">derzeitigen
-                                    Koalitionsvertrag</a> Textstellen wie</p>
-
-                            <div class="quote_block">
-                                <p> "Darüber hinaus sichern wir die digitale Souveränität, u. a. durch das Recht auf
-                                    Interoperabilität und
-                                    Portabilität sowie das Setzen auf offene Standards [und] Open Source. [...] <br>
-                                    Entwicklungsaufträge werden in der Regel als Open Source beauftragt, die
-                                    entsprechende
-                                    Software wird
-                                    grundsätzlich öffentlich gemacht."</p>
-                            </div>
-                            <p>Zur konkreten Umsetzung aber scheint es noch ein weiter Weg:<br>
-                                <a href="https://fsfe.org/news/2022/news-20220315-01.de.html">Deutschland: 100 Tage
-                                    Koalitionsvertrag –
-                                    Kaum
-                                    ein Tag für Freie Software</a>
-                            </p>
-
-                            <h4>Der ganze Beschluss zur EU OpenSource Strategie: <a
-                                    href="https://ec.europa.eu/info/sites/default/files/de_ec_open_source_strategy_2020-2023.pdf">EU
-                                    Digital
-                                    Strategie: Offenes
-                                    Denken</a></h4>
-
-
-                            <p>Ein auch immer wieder auftauchender Begriff ist die "Digitale Souveränität",<br> die im
-                                Wesentlichen die
-                                Unabhängigkeit von Herstellern und Ländern beschreibt. Auch hier liegt Open Source als
-                                Lösung nahe. <br>
-                                Siehe: <a
-                                    href="https://www.oeffentliche-it.de/documents/10181/14412/Digitale+Souver%C3%A4nit%C3%A4t">Digitale
-                                    Souveränität - Kompetenzzentrum öffentliche IT</a></p>
-
-                        </div>
-                    </div>
-                </div>
             </div>
+            <p>Ein paar Hintergründe:</p>
+            <p><a
+                href="https://noahpeeters.de/publication/misc/nak-open-source-software/blechschmidt_til-peeters_noah-oss.pdf">Wie
+              nehmen Endanwender Open-Source-Software wahr?</a></p>
+
+          </div>
         </div>
+        <div class="wrap">
+          <input type="checkbox" id="tab-5" name="tabs"/>
+          <label class="accordion-label" for="tab-5"></label>
+          <div class="accordion-box">
+            <div class="accordion-headline">Fehlende politische Anreize</div>
+            <div class="cross"></div>
+          </div>
+          <div class="content">
+            <h4>Politische Anreize für die Verwendung und Entwicklung von offenen Standards und FOSS
+            </h4>
 
+            <p>Quelloffenheit und die Verwendung offener Standards als Voraussetzung für Software in der öffentlichen
+              Verwaltung. <br>Anreize in Ausschreibungen, steuerliche und rechtliche Erleichterungen sowie finanzielle
+              Förderungen von FOSS Projekten.</p>
 
+            <p>All das sind mögliche Stellschrauben, mit denen die Politik Einfluss auf die Verbreitung und Verwendung
+              von freier Software nehmen kann.</p>
 
+            <div class="quote_block">
+              <p><b>netzpolitik.org:</b> "Wenn Open-Source-Software derart positive Auswirkungen hat, warum wurde sie
+                bislang politisch kaum gefördert?"</p>
 
-
-
-    </section>
-    <hr class="section-separator">
-    <section id="gruendeGegenFoss">
-        <h1>Warum werden nicht noch mehr Open Source und offene Standards genutzt?</h1>
-        <div class="row">
-            <div class="col">
-                <h2>Was ist der Grund für all die eingestellte Software?</h2>
-                <h2>Die langsame Verbreitung und Rückmigrationen.</h2>
-                <br>
-                <div class="tabs">
-                    <div class="tab">
-                        <input type="checkbox" id="chck6">
-                        <label class="tab-label" for="chck6">Marktmacht & Wirtschaftliche Einflüsse in die
-                            Politik</label>
-                        <div class="tab-content">
-                            <h4>Die Verstrickung großer Unternehmen mit der Politik.</h4>
-                            <div class="blocksatz">
-                                <p>Sei es die Tabakindustrie, Pharmaunternehmen oder der Automobilsektor.
-                                    Die Einflussnahme durch abgesandte Lobbyisten bemerken wir zunehmend in den
-                                    unterschiedlichsten Bereichen.</p>
-
-                                <p>Doch keiner dieser Bereiche unterhält so viele Interressensvertreter, steckt solche
-                                    Geldbeträge in das Lobbying, wie die IT-Brance.</p>
-
-                                <p>Angeführt von Google, Facebook, Microsoft, Apple und Huawei, allein die 10 Größten
-                                    Tech-Konzerne zahlen jedes Jahr 32 Million Euro für das Festigen ihrer Marktmacht.
-                                </p>
-
-                                <p>Über 100 Millionen die von Anbietern Proprietärer Produkte jedes Jahr unter anderem
-                                    darin
-                                    gesteckt werden, dass selbst erfolgreiche Projekte wie LiMux rückmigriert werden,
-                                    dass politische Anreize für freie Software und Policies, die den Einsatz von offenen
-                                    Standards verpflichten würden, vermieden werden. <br>
-                                    Die dazu führen, dass wir statt transparenter Vergabeverfahren nur geschwärzte
-                                    Seiten
-                                    eines per SMS abgeschlossenen Vertrages zu Gesicht bekommen.</p>
-                                <!-- #TODO Link Beispiel Finden oder weglassen -->
-
-                                <p>Freie Software als nicht kommerziell getriebene Bewegung besitzt solch eine Form des
-                                    Lobbyings nicht.<br>
-                                    Hier sind Wir es. Die Menschen, die mit offenen Augen und Bewusstsein dafür
-                                    einstehen
-                                    müssen, was sich unsere Freiheit nennt.</p>
-
-                            </div>
-
-                            <h4>Quellen:</h4>
-                            <p>
-                                <a href="https://www.lobbycontrol.de/2021/08/neue-studie-zur-lobbymacht-von-big-tech/">Neue
-                                    Studie zur Lobbymacht von Big Tech: Wie Google & Co die EU beeinflussen </a> <br>
-                                <a href="https://www.stb-web.de/news/article.php/id/24979">Big Tech gibt fast 100
-                                    Millionen Euro für Lobbyarbeit aus</a> <br>
-                                <a
-                                    href="https://www.heise.de/news/Lobbyschlacht-Was-sich-Google-Co-den-Kampf-gegen-EU-Regeln-kosten-lassen-6180025.html">Lobbyschlacht:
-                                    Was sich Google & Co den Kampf gegen EU-Regeln kosten lassen </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="checkbox" id="chck7">
-                        <label class="tab-label" for="chck7">Bestehendes Lock-In</label>
-                        <div class="tab-content">
-
-                            <h4>Warum kaufst Du Dir neben deinem IPhone nicht einfach einen Windows Laptop ?<br>
-                                Was hält Dich davon ab, neben Photoshop mal Gimp zu nutzen ?</h4>
-
-                            <div class="blocksatz">
-                                <p>Angewandt wird eine Strategie, die sich Vendor-Lock-In nennt.
-                                    Lassen wir Mark Russinovich, einen leitenden Direktor von Microsoft, das selbst
-                                    erklären:</p>
-
-                                <!-- #TODO Vll noch Kürzen -->
-                                <div class="quote_block">
-                                    <p>„Die Windows-API ist so breit, so tief und so funktional, dass die meisten
-                                        unabhängigen Softwarehersteller verrückt sein müssten, um sie nicht zu benutzen.
-                                        Außerdem ist sie so tief in den Quelltext vieler Windows-Anwendungen integriert,
-                                        dass es hohe Wechselkosten gäbe, wenn man stattdessen ein anderes Betriebssystem
-                                        verwenden wollte. [...] Es sind die Wechselkosten, die den Kunden die Geduld
-                                        gaben,
-                                        bei Windows zu bleiben
-                                        trotz all unseren Fehlern, unseren fehlerhaften Treibern, unseren hohen
-                                        Gesamtbetriebskosten, unserem Mangel an einer sexy Vision hin und wieder und
-                                        vielen
-                                        anderen Schwierigkeiten […] Kunden probieren ständig andere Desktopplattformen,
-                                        aber
-                                        es würde so viel Arbeit machen, zu wechseln, dass sie hoffen, dass wir einfach
-                                        Windows verbessern, anstatt sie zu zwingen zu wechseln.
-                                        Kurzgesagt, ohne die exklusiven Franchiserechte, die sich Windows-API nennen,
-                                        wären
-                                        wir schon lange tot."</p>
-                                </div>
-                                <p>Es beginnt ganz harmlos. Kostenlose Angebote der Office Suite. Studierenden Accounts
-                                    für die
-                                    Adobe Creative Cloud. <br>
-                                    Wir bauen technisches Wissen auf, arbeiten uns in die Produkte hinein und erzeugen
-                                    und
-                                    speichern Dateien. Wir gewöhnen uns an die Bedienbarkeit, wollen weitere Systeme
-                                    einbinden und müssen uns nach kompatiblen Produkten umschauen.
-                                    Jeder dieser Schritte trägt uns weiter hinein in die Abhängigkeit. </p>
-
-                                <p>Und genau deshalb ist die Verwendung und Verbreitung von offenen Standards so
-                                    wichtig.</p>
-
-                            </div>
-                            <p>Mehr dazu: <a href="https://fsfe.org/freesoftware/standards/index.de.html">FSFE: Offene
-                                    Standards und Lock-In</a></p>
-
-                            <p>Und was sich hinter der Microsoft Strategie<br> "Embrace, Extend and Extinguish"
-                                verbirgt,
-                                erfährst du hier:<br> <a
-                                    href="https://skeptric.com/embrace-extend-extinguish/">Skeptric.com: Embrace,
-                                    Extend and Extinguish</a><br> <a
-                                    href="https://theurbanengine.com/blog//embrace-extend-extinguish-by-microsoft">Urban
-                                    Engine: "Embrace, Extend, Extinguish" by Microsoft</a></p>
-
-                            <p>Und noch mehr zum Lock-In Effekt allgemein und wie er entstanden ist:<br> <a
-                                    href="https://de-academic.com/dic.nsf/dewiki/873912">de-academic.com -
-                                    Lock-in-Effect</a></p>
-
-                            <p>Zitat Quelle (Aus dem Englischen)<a
-                                    href="https://web.archive.org/web/20150831031029/http://news.microsoft.com/download/legal/europeancommission/03-24-06EUDecision.pdf"><br>Commission
-                                    of the european communities - Decision</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="checkbox" id="chck8">
-                        <label class="tab-label" for="chck8">Fehlendes Know-how & Struktur</label>
-                        <div class="tab-content">
-                            <div class="blocksatz">
-                                <h4>Community- und Projektmanagement, Planung, Design</h4>
-                                <p>Hinter großen Softwareprojekten wie MS-Office stehen in der Regel große
-                                    Unternehmen
-                                    mit
-                                    etablierten Organisationsstrukturen, Finanzierungsstrategien,
-                                    spezialisierten Teams und aktivem Projektmanagement.</p>
-
-                                <p>FOSS hingegen entspringt einer Bewegegung, die gerade diese Strukturen,
-                                    Verpflichtungen
-                                    und
-                                    Policies umgeht und auf einer Basis an Freiweilligen aufbaut.
-                                    Es ist gegenseitiges Vertrauen, Selbstorganisation und Motivation, die den Kern
-                                    dieser
-                                    Bewegung bilden.</p>
-
-                                <p>Und dies ist häufig der Grund für eine geringe Diversität unter den Beitragenden. Es
-                                    sind
-                                    größtenteils Entwickler:innnen die meißt durch das beitragen von Code mit
-                                    einsteigen.
-                                    Aufgaben wie z.B. Community Management, Finanzplanung, Marketing und
-                                    Design
-                                    werden nur sehr selten und häufig von völlig Fachfremden übernommen.</p>
-
-                                <div class="quote_block">
-                                    <p>“We are not very good at marketing; we are problem solvers.”</p>
-                                    <p>“We lack a community person. The acceptance for it is missing, we need the money
-                                        to
-                                        produce code.”</p>
-                                    <p>“I would prefer to be just an engineer. In practice I am a community manager.”
-                                    </p>
-                                </div>
-
-                                <p>Nicht nur fehlen damit Ansprechpartner für mögliche Partnerunternehmen. Für viele
-                                    Kunden
-                                    entsteht Vertrauen auch erst mit einer sichtbaren Organisationsstruktur, die Dinge
-                                    wie
-                                    Maintenance, Verwaltung und Support gewährleistet.</p>
-
-                                <p>Für eine weitere Verbreitung von FOSS braucht es eben nicht nur technische Lösungen.
-                                    Mindestens genauso wichtig ist Vielfalt, die nicht nur Expertise,
-                                    sondern auch Bereiche wie Herkunft, sozialen Stand und Geschlecht mit beachtet.</p>
-                            </div>
-                            <h4>All dies und viel mehr, sehr lesenswert erarbeitet, in folgender Studie:</h4>
-                            <p><a href="https://recommendations.implicit-development.org/assets/IDE_REPORT_2020.pdf">Roadwork
-                                    ahead -
-                                    Evaluating the needs of
-                                    FOSS communities working
-                                    on digital infrastructure in
-                                    the public interest</a>
-                            </p>
-
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="checkbox" id="chck9">
-                        <label class="tab-label" for="chck9">Fehlendes Verständnis für die Problematik</label>
-                        <div class="tab-content">
-                            <h4>Digitale Souveränität, Abhängigkeit, Selbstgestaltung und das Bewusstsein darüber</h4>
-                            <div class="blocksatz">
-                                <p>Die Publikationen, die sich mit FOSS beschäftigen, haben in den letzten Jahren stark
-                                    zugenommen.
-                                    In Fachkreisen schon länger bekannt, die Gründe auch freie Software als relevante
-                                    und unentbehrliche Quelle für Programme zu beachten, wird zunehmend in einer
-                                    Vielzahl an Publikationen und Studien erarbeitet.
-                                    Und so nimmt das Thema auch in politischen und wirtschaftlichen Fachkreisen langsam
-                                    Fahrt auf.</p>
-
-                                <p>Doch bei privaten und fachfremenden Personen fehlt das Verständnis und Bewusstsein
-                                    für diese Thematik häufig.
-                                    Nicht nur ein technisches Verständnis für die Funktionsweise und Bedeutung von z.B.
-                                    Offenen Standards fehlt,
-                                    auch die wirtschaftlichen Strategien, die uns in den Lock-In treiben, werden nur
-                                    selten durchblickt.</p>
-
-                                <p>Oder bist Du Dir bei jedem Druck auf den "Speichern" Button bewusst, ob deine
-                                    Arbeit gerade in einem propriertären oder freien Dateiformat gespeichert wird?</p>
-
-                            </div>
-                            <p>Ein paar Hintergründe:</p>
-                            <p><a
-                                    href="https://noahpeeters.de/publication/misc/nak-open-source-software/blechschmidt_til-peeters_noah-oss.pdf">Wie
-                                    nehmen Endanwender Open Source Software wahr?</a></p>
-
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="checkbox" id="chck10">
-                        <label class="tab-label" for="chck10">Fehlende politische Anreize</label>
-                        <div class="tab-content">
-                            <h4>Politische Anreize für die Verwendung und Entwicklung von offenen Standards und FOSS
-                            </h4>
-
-                            <p>Quelloffenheit und die Verwendung offener Standards als Vorraussetzung für Software in
-                                der öffentlichen Verwaltung. <br>
-                                Anreize in Ausschreibungen, steuerliche und rechtliche Erleichterungen sowie finanzielle
-                                Förderungen
-                                von FOSS Projekten.</p>
-
-                            <p>All das sind mögliche Stellschrauben, mit denen die Politik Einfluss auf die Verbreitung
-                                und
-                                Verwendung von freier Software nehmen kann.</p>
-
-                            <div class="quote_block">
-                                <p><b>netzpolitik.org:</b> "Wenn Open-Source-Software derart positive Auswirkungen hat,
-                                    warum
-                                    wurde sie bislang politisch kaum gefördert?"</p>
-
-                                <p><b>Blind:</b> "Man hat, glaube ich, sehr auf den freiwilligen Charakter von
-                                    Open-Source-Projekten gezählt. Was wir aber sehen ist, dass Projekte immer schwerer
-                                    nachhaltig Mitwirkende finden. Es gibt auch in diesem Bereich einen
-                                    Fachkräftemangel. [...] Das größte Problem der Unternehmen ist, die
-                                    Entwickler auf dem Arbeitsmarkt zu finden, die Code zu Open-Source-Repositories
-                                    beitragen können. Die Politik ist folglich hier gefragt, stärker das Thema Open
-                                    Source in der Ausbildung zukünftiger Softwareentwickler, aber auch Gründer zu
-                                    positionieren.</p>
-                                <p>Auch müssen wir über öffentliche Finanzierung nachdenken. Die EU-Kommission hat in
-                                    der Vergangenheit Open-Source-Projekte gefördert, doch im aktuellen Arbeitsprogramm
-                                    von Horizon Europe gibt es bisher nicht sehr viele Ansatzpunkte zu Open Source drin.
-                                    Da gibt es sicherlich noch Spielraum.</p>
-                                <p>Die Unterstützung von Open Source ist im Vergleich zu anderen Themen begrenzt.
-                                    Vielleicht auch deshalb, weil wir in Europa keine großen Player wie in den USA
-                                    haben, wo Google, Microsoft und Amazon massiv in Open-Source-Aktivitäten
-                                    investieren. In Europa sind es dagegen eher kleine und mittleren Unternehmen ohne
-                                    große Lobby, die zu Open Source beitragen."</p>
-                            </div>
-
-                            <h4>Das Ganze Interview und mehr dazu: </h4>
-                            <p><a
-                                    href="https://netzpolitik.org/2021/interview-open-source-braucht-oeffentliche-finanzierung/">
-                                    Netzpolitik - „Open Source braucht öffentliche Finanzierung“ </a></p>
-
-                            <h4>Eine von der Open Knowledge Foundation initiierte Initiative für ein Förderprogramm</h4>
-                            <p><a href="https://sovereigntechfund.de/">Förderung für Offene Digitale Basistechnologien -
-                                    Sovereign Tech Fund</a></p>
-
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="checkbox" id="chck11">
-                        <label class="tab-label" for="chck11">Noch weitere Gründe?</label>
-                        <div class="tab-content">
-                            <div class="blocksatz">
-                                <h4>Fehlendes Personal und propriertäre Hardware</h4>
-
-                                <p>Natürlich gibt es noch weitere Gründe, die der Verbreitung von freier und Open Source
-                                    Software im Wege stehen.
-                                    Häufig ist es schlichtweg fehlendes Personal, das über ausreichend Know-How für
-                                    einen
-                                    Umstieg und Support verfügt. Gerade in kleineren Unternehmen ist dies ein
-                                    verbreiteter
-                                    Faktor.</p>
-
-                                <p>Aber auch die damit verbundenen neuen rechtlichen Aspekte, die auf die Unternehmen
-                                    zukommen, scheuen viele.</p>
-
-                                <p>Ein weiteres großes Problem ist die proprietäre Hardware.
-                                    Während früher die Hardwarespezifikationen noch dem Produkt
-                                    beilagen, versuchen heutzutage Hersteller Informationen über den internen
-                                    Aufbau bestmöglich zu verschleiern.
-                                    Dies behindert das Entwickeln von Software für diese Hardware. Nur durch extrem
-                                    aufwendiges Reverse-Engineering lassen sich z.B. Grafikkartentreiber von nicht
-                                    kooperativen Herstellern für GNU/Linux entwickeln.
-                                </p>
-
-
-                                <p>Und nicht zuletzt muss die Software geschrieben, gewartet und gepflegt werden. <br>
-                                    Auch wenn mittlerweile viele Unternehmen FOSS einsetzen, nur wenige tragen auch
-                                    aktiv zu
-                                    neuen Projekten bei oder rufen diese ins Leben.</p>
-                            </div>
-                            <p><b>Quelle und weitere Gründe</b><br> <a
-                                    href="https://www.bitkom.org/sites/main/files/2021-12/211207-bitkom-studie-openmonitor-2021.pdf">Open-Source-Monitor
-                                    Studienbericht 2021 - Bitcom</a></p>
-                            <p><b>Das Problem von propriertärer Hardware</b><br><a
-                                    href="https://www.youtube.com/watch?v=LiCLP3s-UUI">Freie Software braucht freie
-                                    Hardware</a> </p>
-                        </div>
-                    </div>
-                </div>
+              <p><b>Blind:</b> "Man hat, glaube ich, sehr auf den freiwilligen Charakter von Open-Source-Projekten
+                gezählt. Was wir aber sehen ist, dass Projekte immer schwerer nachhaltig Mitwirkende finden. Es gibt
+                auch in diesem Bereich einen Fachkräftemangel. [...] Das größte Problem der Unternehmen ist, die
+                Entwickler auf dem Arbeitsmarkt zu finden, die Code zu Open-Source-Repositories beitragen können. Die
+                Politik ist folglich hier gefragt, stärker das Thema Open Source in der Ausbildung zukünftiger
+                Softwareentwickler, aber auch Gründer zu positionieren.</p>
+              <p>Auch müssen wir über öffentliche Finanzierung nachdenken. Die EU-Kommission hat in der Vergangenheit
+                Open-Source-Projekte gefördert, doch im aktuellen Arbeitsprogramm von Horizon Europe gibt es bisher
+                nicht sehr viele Ansatzpunkte zu Open Source drin. Da gibt es sicherlich noch Spielraum.</p>
+              <p>Die Unterstützung von Open Source ist im Vergleich zu anderen Themen begrenzt. Vielleicht auch deshalb,
+                weil wir in Europa keine großen Player wie in den USA haben, wo Google, Microsoft und Amazon massiv in
+                Open-Source-Aktivitäten investieren. In Europa sind es dagegen eher kleine und mittleren Unternehmen
+                ohne große Lobby, die zu Open Source beitragen."</p>
             </div>
+
+            <h4>Das ganze Interview und mehr dazu: </h4>
+            <p><a href="https://netzpolitik.org/2021/interview-open-source-braucht-oeffentliche-finanzierung/">
+              Netzpolitik - „Open Source braucht öffentliche Finanzierung“ </a></p>
+
+            <h4>Eine von der Open Knowledge Foundation initiierte Initiative für ein Förderprogramm</h4>
+            <p><a href="https://sovereigntechfund.de/">Förderung für Offene digitale Basistechnologien -
+              Sovereign Tech Fund</a></p>
+          </div>
         </div>
-    </section>
-    <hr class="section-separator">
-    <section>
-        <div class="quote_block">
-            <h1>„Open Source ist nicht nur eine Software sondern eine Kultur, nämlich die einer offenen
-                Wissensgesellschaft in der wir Wissen miteinander teilen!”</h1>
+        <div class="wrap">
+          <input type="checkbox" id="tab-6" name="tabs"/>
+          <label class="accordion-label" for="tab-6"></label>
+          <div class="accordion-box">
+            <div class="accordion-headline">Noch weitere Gründe?</div>
+            <div class="cross"></div>
+          </div>
+          <div class="content">
+            <h4>Fehlendes Personal und proprietäre Hardware</h4>
+
+            <p>Natürlich gibt es noch weitere Gründe, die der Verbreitung von freier und Open-Source-Software im Wege
+              stehen. Häufig ist es schlichtweg fehlendes Personal, das über ausreichend Know-How für einen Umstieg und
+              Support verfügt. Gerade in kleineren Unternehmen ist dies ein verbreiteter Faktor.</p>
+
+            <p>Aber auch die damit verbundenen neuen rechtlichen Aspekte, die auf die Unternehmen
+              zukommen, scheuen viele.</p>
+
+            <p>Ein weiteres großes Problem ist die proprietäre Hardware. Während früher die Hardwarespezifikationen noch
+              dem Produkt beilagen, versuchen heutzutage Hersteller Informationen über den internen Aufbau bestmöglich
+              zu verschleiern. Dies behindert das Entwickeln von Software für diese Hardware. Nur durch extrem
+              aufwendiges Reverse-Engineering lassen sich z.B. Grafikkartentreiber von nicht kooperativen Herstellern
+              für GNU/Linux entwickeln.
+            </p>
+            <p>Und nicht zuletzt muss die Software geschrieben, gewartet und gepflegt werden. <br>Auch wenn mittlerweile
+              viele Unternehmen FOSS einsetzen, nur wenige tragen auch aktiv zu neuen Projekten bei oder rufen diese ins
+              Leben.</p>
+            <p><b>Quelle und weitere Gründe</b><br>
+              <a href="https://www.bitkom.org/sites/main/files/2021-12/211207-bitkom-studie-openmonitor-2021.pdf">Open-Source-Monitor
+                Studienbericht 2021 - Bitcom</a></p>
+            <p><b>Das Problem von proprietärer Hardware</b><br>
+              <a href="https://www.youtube.com/watch?v=LiCLP3s-UUI">Freie Software braucht freie Hardware</a></p>
+          </div>
         </div>
-        <p><br>Quelle: <a
-                href="https://citylab-berlin.org/de/blog/rueckblick-open-source-als-baustein-einer-europaeischen-innovationspolitik/">Rückblick:
-                Open Source als Baustein einer europäischen Innovationspolitik</a></p>
-    </section>
-
-
-    <hr class="section-separator">
-    <section id="aktivWerden">
-        <h1 style="margin-bottom: 30px;">Und für diese Freiheit müssen wir aktiv werden!</h1>
-
-        <p style="width: 60rem; font-size: 130%; font-weight: 400; margin: auto;">Schlussendlich sind wir es, die für
-            unsere Freiheit und Unabhängigkeit<br> auch in der Digitalen Welt
-            einstehen müssen.</p>
-        <br>
-        <p style="width: 40rem; margin: auto;">FOSS wird uns nicht von allen Problemen der Welt erlösen. Aber mit ihrer
-            Verbreitung, gehen wir einen
-            weiteren wichtigen Schritt, welcher mehr Rechte, Vielfalt und Macht in die Hände unserer Gemeinschaft
-            zurückgibt.</p>
-
-        <!---<p>Freie Software ist eine Bewegung der Freiheit. Mit ihr geht es schon lange nicht mehr nur um Software.
-                    <br>
-                    Sie vereint eine Bewegung von freiem Wissen.
-                </p> -->
-
-
-        <button type="button" class="btn btn-outline-success btn-lg btn-call-to-action shadow-none"
-            onclick="window.location.href='https://fsfe.org/contribute/contribute.de.html'">Mach
-            mit!</button>
-
-    </section>
-    <hr class="section-separator">
-    <section id="initiativen">
-        <h1 class="kurz-einmal-fuer-uebersicht">Initiativen</h1>
-
-        <h3>Bedeutende Stiftungen und Initiativen in denen auch du aktiv werden kannst</h3>
-        <div class="container link-container justify-content-center">
-            <div class="row  justify-content-center link-row">
-                <div class="col">
-                    <p><a class="btn btn-outline-primary btn-lg btn-links" role="button" href="https://fsfe.org/">Free
-                            Software Foundation</a></p>
-                </div>
-                <div class="col col-link">
-                    <p><a class="btn btn-outline-primary btn-lg btn-links" role="button" href="https://okfn.de/de/">Open
-                            Knowledge Foundation</a></p>
-                </div>
-            </div>
-            <div class="row   link-row">
-                <div class="col col-link">
-                    <p><a class="btn btn-outline-primary btn-lg btn-links" role="button"
-                            href="https://publiccode.eu/de/"> Public Money Public Code </a></p>
-                </div>
-                <div class="col col-link">
-                    <p><a class="btn btn-outline-primary btn-lg btn-links" role="button"
-                            href="https://www.opentech.fund/">Open Technology Fund</a></p>
-                </div>
-            </div>
-            <div class="row  link-row">
-                <div class="col col-link">
-                    <p><a class="btn btn-outline-primary btn-lg btn-links" role="button"
-                            href="https://opensource.org/">Open Source Initiative</a> </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr class="section-separator">
-    <section id="nichtNurSoftware">
-        <h1>Und wenn es nicht mehr nur um Software geht?</h1>
-
-        <div class="kurz-einmal-fuer-uebersicht">
-            <h3>Human Rights</h3>
-            <p><b>Menschenrechte und unsere Freiheit</b></p>
-
-
-            <div class="container link-container justify-content-center">
-                <div class="row  justify-content-center link-row">
-                    <div class="col col-link">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                href="https://www.torproject.org/de/"><b>Privat im Internet</b><br>TOR Project</a></p>
-                    </div>
-                    <div class="col col-link">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                href="https://osr4rights.org/"><b>Open Source Research for Human
-                                    Rights</b><br>osr4rights.org</a></p>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-
-                        </div>
-                        <div class="col">
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="kurz-einmal-fuer-uebersicht">
-            <h3>Nachhaltigkeit</h3>
-            <p><b>OpenSource als Weg in eine nachhaltige Digitale Zukunft?</b></p>
-
-            <div class="container link-container justify-content-center">
-                <div class="row  justify-content-center link-row">
-                    <div class="col">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                href="https://gnulinux.ch/mehr-nachhaltigkeit-durch-freie-software"><b>Mehr
-                                    Nachhaltigkeit
-                                    durch Freie Software</b><br>GNU/Linux.ch</a></p>
-                    </div>
-                    <div class="col col-link">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                href="https://netzpolitik.org/2021/nachhaltigkeitsstudie-software-ist-fuer-alle-da/"><b>Software
-                                    ist für alle da</b><br>Netzpolitik</a></p>
-                    </div>
-                </div>
-                <div class="row link-row ">
-                    <div class="col col-link">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                href="https://www.societybyte.swiss/2021/09/17/open-source-ist-eine-manifestation-der-digitalen-nachhaltigkeit/"><b
-                                    style="font-size: 91%;">OpenSource,
-                                    Manifestation der digitalen Nachhaltigkeit</b><br>Societybyte</a></p>
-                    </div>
-                    <div class="col col-link">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                href="https://media.ccc.de/v/wk04-7557-von-freier-software-zu-nachhaltiger-software-und-wieder-zurck"><b>Von
-                                    Freier Software zu nachhaltiger Software</b><br>CCC</a></p>
-                    </div>
-                </div>
-                <div class="row link-row ">
-                    <div class="col col-link">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                href="https://www.heise.de/news/Open-Source-Gipfel-Nur-offene-Technologie-ist-nachhaltig-6350862.html"><b>Nur
-                                    Offene Technologien sind Nachhaltig</b><br>heise</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="kurz-einmal-fuer-uebersicht">
-            <h3>Digitale Souveränität</h3>
-            <p><b>Unabhängigkeit und Selbstbestimmtheit</b></p>
-
-            <div class="container link-container justify-content-center">
-                <div class="row  justify-content-center link-row">
-                    <div class="col">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                href="https://www.bmbf.de/bmbf/de/europa-und-die-welt/innovationsstandort-deutschland/technologische-souveraenitaet/technologische-souveraenitaet_node.html"><b>Technologische
-                                    Souveränität</b><br>Definition und Übersicht - Bundesministerium</a></p>
-                    </div>
-                    <div class="col col-link">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                href="https://netzpolitik.org/2022/staatliche-vorzeigeprojekte-wer-profitiert-von-digitaler-souveraenitaet/"><b>Wer
-                                    profitiert von Digitaler Souveränität?</b><br>Netzpolitik</a></p>
-                    </div>
-                </div>
-                <div class="row link-row ">
-                    <div class="col col-link">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                href="https://publica.fraunhofer.de/dokumente/N-593501.html"><b>Von der Forderung zum
-                                    Konzept</b><br>Fraunhofer Institut</a></p>
-                    </div>
-                    <div class="col col-link">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                href="https://www.oeffentliche-it.de/documents/10181/14412/Digitale+Souver%C3%A4nit%C3%A4t"><b>Technologische
-                                    Souveränität</b><br>Kompetenzzentrum Öffentliche IT</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="kurz-einmal-fuer-uebersicht">
-            <h3>Freies Wissen</h3>
-            <p><b>Wissensgesellschaft</b></p>
-            <div class="container link-container justify-content-center">
-                <div class="row  justify-content-center link-row">
-                    <div class="col">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button" href="https://openall.info/open-culture-offene-kultur/open-knowledge/
-                                "><b>Open Knowledge – Freies Wissen</b><br>OpenAll.info</a></p>
-                    </div>
-                    <div class="row link-row ">
-                        <div class="col col-link">
-                            <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                    href="https://www.wikimedia.de/"><b>"Wir befreien Wissen"</b><br>Wikimedia</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="kurz-einmal-fuer-uebersicht">
-            <h3>Wirtschaft</h3>
-            <p><b>Ist FOSS Wirtschaftlich?</b></p>
-            <div class="container link-container justify-content-center">
-                <div class="row  justify-content-center link-row">
-                    <div class="col">
-                        <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                href="https://netzpolitik.org/2021/interview-open-source-braucht-oeffentliche-finanzierung/"><b>Open-Source-Software
-                                    als Wachstumsmotor?</b><br>Netzpolitik</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="kurz-einmal-fuer-uebersicht">
-                <h3>Open Hardware</h3>
-                <p><b>Wie schaut es mit der Hardware aus?</b></p>
-                <div class="container link-container justify-content-center">
-                    <div class="row  justify-content-center link-row">
-                        <div class="col">
-                            <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                    href="https://opensource.com/resources/what-open-hardware"><b>
-                                        What is open hardware?
-                                    </b><br>OpenSource.com</a></p>
-                        </div>
-                        <div class="col col-link">
-                            <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                    href="https://www.heise.de/news/Open-Hardware-Mit-Steuergeld-finanziertes-Chip-Design-sollte-offengelegt-werden-6350832.html"><b>Mit
-                                        Steuergeld finanziertes Chip-Design sollte offengelegt werden
-                                    </b><br>Heise.de</a></p>
-                        </div>
-                    </div>
-                    <div class="row link-row ">
-                        <div class="col col-link">
-                            <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                    href="https://www.openhardware.io/"><b>Plattform für
-                                        OpenHardware</b><br>OpenHardware.io</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="kurz-einmal-fuer-uebersicht">
-                <h3>Unsere Erde</h3>
-                <p><b>Was hat OpenSource mit unserer Erde zu?</b></p>
-                <div class="container link-container justify-content-center">
-                    <div class="row  justify-content-center link-row">
-                        <div class="col">
-                            <p><a class="btn btn-outline-primary btn-sm btn-links" role="button"
-                                    href="https://earthopensource.org/about-earth-open-source/call-action/"><b>Earth
-                                        Open Source</b><br>EarthOpenSource.org</a></p>
-                        </div>
-                    </div>
-                </div>
-    </section>
-    <hr class="section-separator">
-
-    <section id="mehrInfos">
-
-        <h1>Du möchtest mehr wissen?</h1>
-        <h4>Hier findest du eine Sammlung von weiteren Informationen zum Lesen und Hören</h4>
-
-
-        <div class="container link-container justify-content-center">
-            <div class="row justify-content-center link-row row-spacer">
-                <div class="col col-link">
-
-                    <p><b>Eine gute Übersicht - Artikel & Themen</b></p>
-                    <a class="btn btn-outline-primary btn-links btn-sm" role="button"
-                        href="https://www.bpb.de/themen/digitalisierung/opensource/"><b>OpenSource</b><br>Bundeszentrale
-                        für politische
-                        Bildung</a>
-                </div>
-                <div class="col col-link">
-                    <p><b>Open Source und jenseits von Software</b></p>
-                    <a class="btn btn-outline-primary btn-links btn-sm" role="button"
-                        href="https://www.bpb.de/themen/digitalisierung/opensource/63921/into-the-great-wide-open/"><b>Into
-                            the
-                            Great Wide Open</b>
-                        <br>Bundeszentrale für Politische Bildung</a>
-                </div>
-            </div>
-
-            <div class="row justify-content-center link-row row-spacer">
-                <div class="col col-link">
-
-                    <p><b>Lieber was zum Hören?</b></p>
-                    <a class="btn btn-outline-primary btn-links btn-sm" role="button"
-                        href="https://citylab-berlin.org/de/blog/podcast-radio-citylab/"><b>Aktionsfeld
-                            OpenSource</b><br>Podcast von
-                        RadioCityLab</a>
-                </div>
-
-                <div class="col col-link">
-                    <p><b>Oder zum Sehen</b></p>
-                    <a class="btn btn-outline-primary btn-links btn-sm" role="button"
-                        href="https://www.youtube.com/watch?v=_ZaDuinGf2o"><b>Microsoft-Software: Sicher
-                            für Europa?</b><br>ARD-Reportage - Youtube </a>
-                </div>
-            </div>
-
-            <div class="row justify-content-center link-row row-spacer">
-                <div class="col col-link">
-                    <p><b>Politischen Bestrebungen und OpenSource</b></p>
-                    <a class="btn btn-outline-primary btn-links btn-sm" role="button"
-                        href="https://www.cloudcomputing-insider.de/echte-digitalisierung-braucht-offene-standards-a-689697/"><b>Echte
-                            Digitalisierung braucht offene Standards</b><br>cloudcomputing-insider.de</a>
-                </div>
-                <div class="col col-link">
-                    <p><b>Wie starte ich denn nun ein Open Source Projekt?</b></p> <a
-                        class="btn btn-outline-primary btn-links btn-sm" role="button"
-                        href="https://opensource.guide/de/"><b>Open Source Guide</b><br>OpenSource.guide</a>
-                </div>
-            </div>
-
-            <div class="row justify-content-center link-row row-spacer">
-                <div class="col col-link">
-
-                    <p><b>Die Ursprünge der freien Software Bewegung</b></p> <a
-                        class="btn btn-outline-primary btn-links btn-sm" role="button"
-                        href="https://web.archive.org/web/20080506055328/http://www.zmag.org/znet/viewArticle/4795"><b>Richard
-                            Stallman Interview</b><br>Zmag Magazine</a>
-
-                </div>
-                <div class="col col-link">
-                    <p><b>Mehr zu OpenData</b></p>
-                    <a class="btn btn-outline-primary btn-links btn-sm" role="button"
-                        href="https://opendatahandbook.org/"><b>Open Data Handbook</b><br>opendatahandbook.org</a>
-                </div>
-            </div>
-
-            <div class="row justify-content-center link-row row-spacer">
-                <div class="col col-link">
-
-                    <p><b>Open Future - Ein Thinktank</b></p>
-                    <a class="btn btn-outline-primary btn-links btn-sm" role="button"
-                        href=" https://openfuture.eu/"><b>Towards Open Future</b><br>openfuture.eu</a>
-                </div>
-
-                <div class="col col-link">
-                    <p><b>Unsere Digitale Gesellschaft</b></p>
-                    <a class="btn btn-outline-primary btn-links btn-sm" role="button"
-                        href="https://digitalezivilgesellschaft.org/"><b style="font-size: 90%;">Forderungen für eine
-                            digital-souveräne
-                            Gesellschaft</b><br>digitalezivilgesellschaft.org</a>
-                </div>
-            </div>
-
-            <div class="row justify-content-center link-row row-spacer">
-
-            </div>
-
-        </div>
-
-
-    </section>
-
-    <hr class="section-separator">
-
-
-
-    <section id="kontakt">
-        <h1>Warum nutzt Du keine FOSS Lösungen?</h1>
-        <h2>Schreib uns eine Mail</h2>
-        <a href="mailto:peermaute@gmail.com,nonino@disroot.org" target="_blank">
-            <i class="fa-solid fa-envelope icons"></i>
-        </a>
-    </section>
-    <hr class="section-separator">
-
-    <footer>
-        <div class="container justify-content-center" style="margin-top: 12px; margin-bottom: 12px; line-height: 1.0; " >
-            <div class="row justify-content-center" style="align-items: center; height: 100px;">
-                <div class="col">
-                    <a href="#top"><img src="res/icons/icons8-up-arrow-64.png"></a>                    
-                </div>
-                <div class="col" style="margin: auto; font-size: 120%; font-weight: 200;">
-                    <span>Linus und Peer</span>
-                </div>
-                <div class="col" style="margin: auto;">
-                    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img
-                            alt="Creative Commons Lizenzvertrag" style="border-width:0"
-                            src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
-                    <span class="license-footer">Dieses Werk
-                        ist lizenziert unter einer <br> <a class="license-footer" rel="license"
-                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-                            Commons Namensnennung<br></a></span>
-                </div>
-            </div>
-            <div class="row">
-            </div>  
-        </div>
-
-
-
-    </footer>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="active" class="active section-grey">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Active</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="initiative" class="initiative">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Initiative</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="beyond" class="beyond section-grey">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Beyond</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="infos" class="infos">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Infos</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact section-grey">
+  <div class="container">
+    <div class="content-container">
+      <h1 class="hero-headline">Contact</h1>
+      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
+        beantworten.
+      </div>
+    </div>
+  </div>
+</section>
+<footer></footer>
 </body>
 
 </html>
