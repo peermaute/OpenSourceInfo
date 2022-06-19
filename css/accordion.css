@@ -6,16 +6,14 @@
 
 .wrap {
   display: block;
+  line-height: 1.4em;
+  position: relative;
+  width: 100%;
+  margin: .5em 0;
 }
 
 #reasons input {
-  position: absolute;
-  opacity: 0;
-  height: 2.5em;
-  font-size: 1.2em;
-  cursor: pointer;
-  z-index: 2;
-  user-select: none;
+  display: none;
 }
 
 .accordion-box {
@@ -37,9 +35,8 @@
   cursor: pointer;
   z-index: 2;
   opacity: 0;
-  height: 3.45em;
+  height: 100%;
   width: 100%;
-  max-width: 35em;
 }
 
 .accordion-headline {
@@ -50,7 +47,7 @@
 }
 
 .cross {
-  padding-right: .8em;
+  padding: 0 .8em;
 }
 
 .cross:before, .cross:after {
@@ -68,8 +65,8 @@
 
 .content {
   box-sizing: border-box;
-  font-size: 0.9em;
-  margin: .5em;
+  font-size: .9em;
+  margin: 0 .5em;
   max-height: 0;
   overflow: hidden;
   transition: max-height, .2s;
@@ -85,14 +82,14 @@
 }
 
 #reasons input:checked ~ .content {
-  max-height: 2000px;
+  max-height: 125em;
   transition: max-height, .2s;
 }
 
-#reasons input:checked ~ .accordion-label .cross:before {
+#reasons input:checked ~ .accordion-box .cross:before {
   transform: rotate(180deg);
 }
 
-#reasons input:checked ~ .accordion-label .cross:after {
+#reasons input:checked ~ .accordion-box .cross:after {
   transform: rotate(0deg);
 }
