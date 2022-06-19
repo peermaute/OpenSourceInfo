@@ -81,6 +81,8 @@ section .content-container {
 }
 
 .citation .source {
+  display: block;
+  text-align: center;
   font-weight: 300;
   color: #1A3967;
   font-size: 1em;
