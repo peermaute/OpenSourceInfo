@@ -121,10 +121,21 @@ section .content-container {
   margin: 0 auto;
 }
 
-.small-text-box p {
+.small-text-box > p {
   text-align: justify;
 }
 
-.small-text-box li {
+.small-text-box > li {
   text-align: left;
+}
+
+.small-text-box > .site-note, .source {
+  margin: .5em auto;
+  text-align: center;
+}
+
+.small-text-box > .source {
+  display: block;
+  width: 100%;
+  overflow: hidden;
 }
