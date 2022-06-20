@@ -23,9 +23,9 @@ body {
 
 .box {
     border-radius: 5px;
-    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    box-shadow: 0 30px 40px -20px var(--grayishBlue);
     padding: 30px;
-    margin: 30px 0px 50px 0px;
+    margin: 30px 0 50px 0;
 }
 
 
