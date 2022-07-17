@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/section.css">
   <link rel="stylesheet" href="css/burgerMenu.css">
   <link rel="stylesheet" href="css/accordion.css">
@@ -831,7 +832,7 @@
     </div>
   </div>
 </section>
-<section id="link-collection" class="link-collection section-grey">
+<section id="link-collection" class="link-collection">
   <div class="container">
     <div class="content-container">
       <h1 class="hero-headline">Business im Internet: Chance oder Gefahr? </h1>
@@ -900,17 +901,64 @@
     </div>
   </div>
 </section>
-<section id="contact" class="contact">
+<section id="contact" class="reasons">
   <div class="container">
     <div class="content-container">
-      <h1 class="hero-headline">Contact</h1>
-      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
-        beantworten.
+      <h1 class="hero-headline">Warum werden nicht noch mehr Open Source und offene Standards genutzt?</h1>
+      <div class="hero-subhead">Was ist der Grund für all die eingestellte Software?
+        Die langsame Verbreitung und Rückmigrationen.
+      </div>
+      <div class="wrapper">
+        <div class="wrap">
+          <input type="checkbox" id="legal" name="tabs"/>
+          <label class="accordion-label" for="legal"></label>
+          <div class="accordion-box">
+            <div class="accordion-headline">Impressum</div>
+            <div class="cross"></div>
+          </div>
+          <div class="content">
+            <h1>Impressum</h1>
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <p>HAW Hamburg<br/>
+              Haus B<br/>
+              Berliner Tor 7<br/>
+              20099 Hamburg</p>
+
+            <p><strong>Vertreten durch:</strong><br/>
+              Martin Becke<br/>
+
+            <h2>Kontakt</h2>
+            <p>Telefon: +49 (0) 40<br/>
+              Telefax: +49 (0) 40<br/>
+              E-Mail: @haw-hamburg.de</p>
+
+            <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+            <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+            <p>Quelle: <a href="https://www.e-recht24.de/impressum-generator.html">https://www.e-recht24.de/impressum-generator.html</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<footer></footer>
+<footer class="site-footer">
+  <nav class="desktop footer">
+    <div class="container">
+      <div class="row">
+        <div class="nav-wrapper">
+          <a class="button" onclick="topFunction()">^ nach oben ^</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</footer>
+<script>
+  function topFunction() {
+    document.body.scrollTop = 0 // For Safari
+    document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+  }
+</script>
 </body>
 
 </html>

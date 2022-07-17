@@ -12,7 +12,7 @@
   margin: .5em 0;
 }
 
-#reasons input {
+.reasons input {
   display: none;
 }
 
@@ -81,15 +81,15 @@
   transition: max-height, all .25s ease-in-out;
 }
 
-#reasons input:checked ~ .content {
+.reasons input:checked ~ .content {
   max-height: 125em;
   transition: max-height, .2s;
 }
 
-#reasons input:checked ~ .accordion-box .cross:before {
+.reasons input:checked ~ .accordion-box .cross:before {
   transform: rotate(180deg);
 }
 
-#reasons input:checked ~ .accordion-box .cross:after {
+.reasons input:checked ~ .accordion-box .cross:after {
   transform: rotate(0deg);
 }
