@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/burgerMenu.css">
   <link rel="stylesheet" href="css/accordion.css">
   <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="css/carousel.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -164,9 +165,134 @@
 <section id="use" class="use section-grey">
   <div class="container">
     <div class="content-container">
-      <h1 class="hero-headline">USE</h1>
-      <div class="hero-subhead">Wenn Du Dir nur 15 Minuten Zeit nimmst, kannst Du diese Frage im Anschluss sicherlich
-        beantworten.
+      <h1 class="hero-headline">Was wird denn eigentlich nun wo eingesetzt?</h1>
+      <div class="carousel">
+        <ol class="carousel__viewport">
+          <li id="carousel__slide1"
+              tabindex="0"
+              class="carousel__slide">
+            <h1>Privater Bereich</h1>
+            <i>
+              <img class="icon" src="img/icons/icons8-ms-word-48.png" alt="MSOfficeIcon">
+              <img class="icon" src="img/icons/icons8-adobe-creative-cloud-96.png" alt="AdobeIcon">
+              <img class="icon" src="img/icons/icons8-mac-os-100.png" alt="MacIcon">
+              <img class="icon" src="img/icons/icons8-google-drive-96.png" alt="GoogleDriveIcon">
+              <img class="icon" src="img/icons/icons8-spotify-96.png" alt="SpotifyIcon">
+              <img class="icon" src="img/icons/icons8-netflix-100.png" alt="NetflixIcon">
+            </i>
+            <br>
+            <br>
+            <p>
+              Viel der im privaten Bereich eingesetzten Software sind Produkte großer Unternehmen. <br>
+              In allen Fällen zahlen wir als Endanwender. Häufig mit unseren Daten, aber teilweise auch direkt als
+              Teil eines monatlichen Abos.<br>
+              Doch wer garantiert uns eigentlich, dass wir all die fein säuberlich erstellten Playlists in
+              Spotify, die lang erarbeiteten Photoshopprojekte oder getippten GoogleDocs Dokumente morgen noch zu den
+              derzeitigen Konditionen erreichen können?
+            </p>
+            <h4>Auszug aus den Google Richtlinien:</h4>
+            <blockquote class="quote_block" cite="https://support.google.com/docs/answer/148505?visit_id=637819466039413237-333646249&amp;hl=de&amp;rd=1#zippy=%2Cverwenden-und-einreichen-von-inhalten">
+              <p>
+                <a class="source" href="https://support.google.com/docs/answer/148505?visit_id=637819466039413237-333646249&amp;hl=de&amp;rd=1#zippy=%2Cverwenden-und-einreichen-von-inhalten">
+                "Sobald wir über einen potenziellen Verstoß [gegen die Richtlinien] informiert werden, prüfen wir den
+                Inhalt und ergreifen gegebenenfalls entsprechende Maßnahmen. Dies kann beispielsweise die
+                <b>Beschränkung des Zugriffs</b> auf den Inhalt, die <b>Entfernung von Inhalten</b> sowie die
+                Beschränkung oder Sperrung des Zugriffs auf Google-Produkte für den betreffenden Nutzer beinhalten."
+              </a>
+              </p></blockquote>
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+          </li>
+          <li id="carousel__slide2"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="blocksatz">
+              <h1>Öffentliche Verwaltung</h1>
+              <p>Windows &amp; WindowsServer, MSOffice, GoogleCloud, Adobe,MSTeams, ZOOM, SAP, Jira</p>
+
+              <p> In der öffentlichen Verwaltung ist vor allem sichere, stabile und datenschutzkonforme Software
+                wichtig.<br>
+                Eine große Menge an sensiblen Nutzerdaten müssen verarbeitet werden.<br>
+                Auch hier finden wir größtenteils proprietäre Lösungen.
+              </p>
+              <blockquote class="quote_block" cite="https://netzpolitik.org/2020/datenschutzkonferenz-deutsche-verwaltung-nutzt-microsoft-produkte-nicht-rechtskonform/">
+                "Bereits im vergangenen Jahr stellte eine Marktanalyse im Auftrag des Bundesinnenministeriums fest, dass
+                <b>96 Prozent</b> aller Behörden Produkte aus Microsoft-Office-Paket verwenden."
+                <p>
+                  <a class="source" href="https://netzpolitik.org/2020/datenschutzkonferenz-deutsche-verwaltung-nutzt-microsoft-produkte-nicht-rechtskonform/">Quelle</a>
+                </p>
+              </blockquote>
+
+              <p>
+                Die Lizensen hierfür werden mit öffentlichen Geldern bezahlt, öffentliche Ausschreibungen sollen ein
+                gerechtes Vergabeverfahren gewährleisten.<br>
+                Doch wie kommt es dann, dass wir auf der Suche nur eine große Menge an geschwärzten Verträgen zu Gesicht
+                bekommen?
+              </p>
+            </div>
+
+            <p>Siehe <a class="source" href="https://fragdenstaat.de/dokumente/142633-kooperationsvertrag-luca-app-mit-schleswig-holstein/">
+              <b>Kooperationsvertrag Luca-App mit Schleswig-Holstein</b></a>
+            </p>
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide3"
+               class="carousel__next">Go to next slide</a>
+          </li>
+          <li id="carousel__slide3"
+              tabindex="0"
+              class="carousel__slide">
+            <h1>Schnittstellen</h1>
+            <p>Ein Großteil dieser Programme erzeugen und nutzen proprietäre Dateiformate:.psd, .ppt, .xls usw...</p>
+            <p>
+              Einmal gespeicherte Daten lassen sich auch nur noch von diesen Programmen verwenden, da die Spezifikation
+              der Protokolle und Formate nicht offengelegt wurde. Eine herstellerübergreifende Verwendung wird somit
+              ausgeschlossen.
+              <br>
+            </p>
+            <p>Ein maschinenlesbarer Zugang über eine sogenannten öffentliche
+              <span class="tooltip-native"> API
+                <span class="tooltiptext"> Die API (Application Programming Interface) – auch Programmierschnittstelle
+                  genannt - ermöglicht es Anwendungen miteinander zu kommunizieren
+                </span>
+              </span>
+              wird in manchen Fällen bereitgestellt, aber ist häufig auch nur eingeschränkt nutzbar.
+            </p>
+            <p>Die Hersteller behalten die Kontrolle über die Verwendung und können jederzeit die Nutzung blockieren.
+              Diese Schnittstellen sind nicht nur für barrierefreie Zugänge wichtig. Auch für die Integration in andere
+              Dienste ist sie notwendig.
+            </p>
+            <p style="text-align: center;"><br>Ein Beispiel für den andauernden Kampf um die Offenlegung
+              Arbeitsagentur <br><a class="source" href="https://netzpolitik.org/2021/open-data-arbeitsagentur-kaempft-gegen-offene-schnittstelle/">
+                <b>Arbeitsagentur einer API des Bundes kämpft gegen offene Schnittstelle</b>
+              </a>
+              <br>
+            </p>
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide1"
+               class="carousel__next">Go to next slide</a>
+          </li>
+        </ol>
+        <aside class="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide1"
+                 class="carousel__navigation-button">Go to slide 1</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide2"
+                 class="carousel__navigation-button">Go to slide 2</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide3"
+                 class="carousel__navigation-button">Go to slide 3</a>
+            </li>
+          </ol>
+        </aside>
       </div>
     </div>
   </div>
