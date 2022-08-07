@@ -48,6 +48,19 @@
   flex-direction: row;
 }
 
+.button-package {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #1A3967;
+  text-decoration: none;
+  margin: .5em;
+  width: 100%;
+  max-width: 23em;
+}
+
 @media (max-width: 50.625em) {
   .bundle {
     flex-direction: column
