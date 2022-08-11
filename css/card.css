@@ -1,8 +1,9 @@
-#link-collection {
+#link-collection, #vs {
     --red: hsl(0, 78%, 62%);
     --cyan: hsl(180, 62%, 55%);
     --orange: hsl(34, 97%, 64%);
     --blue: hsl(212, 86%, 64%);
+    --green: hsl(156, 59%, 50%);
     --varyDarkBlue: hsl(234, 12%, 34%);
     --grayishBlue: hsl(229, 6%, 66%);
     --veryLightGray: hsl(0, 0%, 98%);
@@ -10,6 +11,7 @@
     --weight2: 400;
     --weight3: 600;
 }
+
 
 .box {
     border-radius: 0.3125em;
@@ -23,6 +25,12 @@
 }
 .blue {
     border-top: 0.1875em solid var(--blue);
+} 
+.red {
+    border-top: 0.1875em solid var(--red);
+}
+.green {
+    border-top: 0.1875em solid var(--green); 
 }
 
 @media (min-width: 50.625em) {
