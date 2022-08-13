@@ -43,15 +43,7 @@
   }
 }
 
-.carousel {
-  margin: 0 auto;
-  padding: 0 1.25rem;
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-}
-
 * {
-  box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
@@ -82,7 +74,11 @@ ol, li {
   padding-top: 75%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
 }
+
 
 .carousel__viewport {
   position: absolute;
@@ -223,4 +219,23 @@ ol, li {
 
 .carousel::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+
+@media (max-width: 50.625em) {
+	.carousel {
+	  padding-top: 250%;
+	}
+	.carousel::before, .carousel::after, .carousel__prev, .carousel__next {
+		margin-top:120%;
+		
+		position: absolute;
+		top: 0;
+		width: 4rem;
+		height: 4rem;
+		transform: translateY(-0%);
+		border-radius: 50%;
+		font-size: 0;
+		outline: 0;
+	}
 }
