@@ -46,19 +46,21 @@ section .content-container {
   text-align: center;
 }
 
-.ov-page-hero .hero-headline {
+.hero-headline {
   font-size: 1.7em;
   line-height: 1.08349;
   font-weight: 500;
   letter-spacing: -.003em;
+  text-align: center;
 }
 
-.ov-page-hero .hero-subhead {
+.hero-subhead {
   font-size: 16px;
   line-height: 1.16667;
   font-weight: 300;
   letter-spacing: .009em;
   margin: 1.5em 0;
+  text-align: center;
 }
 
 .citation .container {
@@ -121,10 +123,21 @@ section .content-container {
   margin: 0 auto;
 }
 
-.small-text-box p {
+.small-text-box > p {
   text-align: justify;
 }
 
-.small-text-box li {
+.small-text-box > li {
   text-align: left;
+}
+
+.small-text-box > .site-note, .source {
+  margin: .5em auto;
+  text-align: center;
+}
+
+.small-text-box > .source {
+  display: block;
+  width: 100%;
+  overflow: hidden;
 }
