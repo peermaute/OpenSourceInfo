@@ -261,3 +261,17 @@ textarea {
     color: #273139;
   }
 }
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-container-vertical {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 20px;
+  align-items: center;
+}
