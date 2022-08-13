@@ -1,0 +1,143 @@
+section {
+  padding: 4em 0;
+  display: flex;
+  justify-content: center;
+}
+
+section .container {
+  padding: 0 1em;
+}
+
+section .content-container {
+  max-width: 50.625em;
+}
+
+.ov-page-hero .container {
+  padding: 2em 0;
+}
+
+.ov-page-hero .content-container {
+  padding: 2em .5em;
+  display: block;
+  text-align: center;
+  max-width: none;
+}
+
+.section-grey {
+  background: #f9fbfc;
+}
+
+.ov-page-hero {
+  padding-top: 7em;
+  clip-path: none;
+  display: block;
+  width: auto;
+}
+
+.ov-page-hero .container {
+  padding: 2em 0;
+}
+
+.ov-page-hero .content-container {
+  padding: 2em .5em;
+  background-color: #ed7f22;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+}
+
+.hero-headline {
+  font-size: 1.7em;
+  line-height: 1.08349;
+  font-weight: 500;
+  letter-spacing: -.003em;
+  text-align: center;
+}
+
+.hero-subhead {
+  font-size: 16px;
+  line-height: 1.16667;
+  font-weight: 300;
+  letter-spacing: .009em;
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.citation .container {
+  display: flex;
+  justify-content: center;
+}
+
+.citation .content-container {
+  max-width: 50.625em;
+}
+
+.citation .cite {
+  font-weight: 100;
+  font-size: 2em;
+  font-style: italic;
+  font-family: "Inter", sans-serif;
+  line-height: 1.75em;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.citation .source {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  color: #1A3967;
+  font-size: 1em;
+}
+
+.intro .content-container {
+  max-width: 35em;
+  background-color: #1A3967;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 1em 3em;
+}
+
+@media only screen and (max-width: 35em) {
+  .citation .cite {
+    font-size: 1.25em;
+  }
+  .intro .content-container {
+    padding: 1em;
+  }
+}
+
+.definition .container {
+  padding: 0 1em;
+}
+
+.definition .content-container h1 {
+  font-size: 1.7em;
+}
+
+.small-text-box {
+  max-width: 35em;
+  margin: 0 auto;
+}
+
+.small-text-box > p {
+  text-align: justify;
+}
+
+.small-text-box > li {
+  text-align: left;
+}
+
+.small-text-box > .site-note, .source {
+  margin: .5em auto;
+  text-align: center;
+}
+
+.small-text-box > .source {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}

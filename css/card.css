@@ -1,0 +1,40 @@
+#link-collection, #vs {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --green: hsl(156, 59%, 50%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+
+.box {
+    border-radius: 0.3125em;
+    box-shadow: 0 1.875em 2.5em -1.25em var(--grayishBlue);
+    padding: 1.875em;
+    margin: 1.875em 0 3.125em 0;
+}
+
+.cyan {
+    border-top: 0.1875em solid var(--cyan);
+}
+.blue {
+    border-top: 0.1875em solid var(--blue);
+} 
+.red {
+    border-top: 0.1875em solid var(--red);
+}
+.green {
+    border-top: 0.1875em solid var(--green); 
+}
+
+@media (min-width: 50.625em) {
+    .box {
+        width: 100%;
+    }
+}
