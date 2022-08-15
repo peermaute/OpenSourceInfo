@@ -82,7 +82,7 @@ section .content-container {
   margin-bottom: 1em;
 }
 
-.citation .source {
+.source {
   display: block;
   text-align: center;
   font-weight: 300;

@@ -26,6 +26,10 @@
   background-color: #f9f9f9;
 }
 
+.bigger-ref {
+  padding: .5em;
+}
+
 .ref-button:hover {
   color: #ed7f22;
   transition: color .3s ease;

@@ -43,9 +43,6 @@
   }
 }
 
-* {
-}
-
 *::-webkit-scrollbar {
   width: 0;
 }
@@ -72,10 +69,9 @@ ol, li {
 .carousel {
   position: relative;
   padding-top: 75%;
-  filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px;
+  filter: drop-shadow(0 0 0.625em #0003);
+  perspective: 6.25em;
   margin: 0 auto;
-  font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
@@ -91,14 +87,14 @@ ol, li {
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  margin-bottom: -20px;
+  margin-bottom: -1.25em;
 }
 
 .carousel__slide {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-color: #ed7f22;
+  background-color: #f9f9f9;
   counter-increment: item;
 }
 
@@ -106,7 +102,7 @@ ol, li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%,-40%,70px);
+  transform: translate3d(-50%,-40%,4.375em);
   color: #fff;
   font-size: 2em;
 
@@ -210,7 +206,7 @@ ol, li {
 }
 
 .icon {
-  height: 60px;
+  height: 3.75em;
 }
 
 .carousel::before {
@@ -224,7 +220,7 @@ ol, li {
 
 @media (max-width: 50.625em) {
 	.carousel {
-	  padding-top: 250%;
+	  padding-top: 200%;
 	}
 	.carousel::before, .carousel::after, .carousel__prev, .carousel__next {
 		margin-top:120%;
