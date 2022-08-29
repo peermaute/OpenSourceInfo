@@ -1,0 +1,95 @@
+.wrapper {
+  max-width: 35em;
+  padding: 2em 0;
+  margin: 0 auto;
+}
+
+.wrap {
+  display: block;
+  line-height: 1.4em;
+  position: relative;
+  width: 100%;
+  margin: .5em 0;
+}
+
+.reasons input {
+  display: none;
+}
+
+.accordion-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #1A3967;
+  color: #FFFFFF;
+  user-select: none;
+  box-shadow: 0 .5em 1em rgba(0, 0, 0, .16);
+  line-height: 2.9em;
+  font-size: 1.2em;
+  z-index: 1;
+}
+
+.accordion-label {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.accordion-headline {
+  display: flex;
+  cursor: pointer;
+  padding-left: .8em;
+  width: 100%;
+}
+
+.cross {
+  padding: 0 .8em;
+}
+
+.cross:before, .cross:after {
+  content: '';
+  border-top: 2px solid #FFFFFF;
+  width: 15px;
+  display: block;
+  transition: 0.3s;
+}
+
+.cross:after {
+  transform: rotate(90deg);
+  margin-top: -2px;
+}
+
+.content {
+  box-sizing: border-box;
+  font-size: .9em;
+  margin: 0 .5em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height, .2s;
+}
+
+.content:after {
+  box-sizing: border-box;
+  font-size: 0.9em;
+  margin: .5em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height, all .25s ease-in-out;
+}
+
+.reasons input:checked ~ .content {
+  max-height: 125em;
+  transition: max-height, .2s;
+}
+
+.reasons input:checked ~ .accordion-box .cross:before {
+  transform: rotate(180deg);
+}
+
+.reasons input:checked ~ .accordion-box .cross:after {
+  transform: rotate(0deg);
+}
